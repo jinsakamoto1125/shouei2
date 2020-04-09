@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+body{
+font-family: serif;
+}
+
+.top-wrapper{
+  width: 100%;
+  height:700px;
+  background-image: url(../img/mati.jpg);
+  background-size: cover;
+}
+
+.top-wrapper-2  h1{
+position: absolute;
+top:5%;
+left: 40%;
+}
+.top-wrapper-2  h2{
+position: absolute;
+top:10%;
+left: 45%;
+}
+.header-right{
+  float:right;
+}
+.header-right p{
+  float:left;
+}
+.header-left{
+  float:left;
+}
+.header-left  h1{
+  margin-left:50px; padding-bottom:30px;  color: transparent;
+  background-color : black;
+  text-shadow : rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;
+  -webkit-background-clip : text;
+  font-size:50px; color:white;
+  -webkit-background-clip : text;
+}
+.header-left span{
+  color:yellow;
+}
+.top-wrapper-2{
+  "color:white
+}
+.top-wrapper-2  h1{
+ color:white;
+  text-shadow : rgba(255,255,255,0.5) 0 5px 6px,
+  rgba(255,255,255,0.2) 1px 3px 3px;
+}
+.top-wrapper-2  h2{
+  color:white;  text-shadow :
+  rgba(255,255,255,0.5) 0 5px 6px,
+  rgba(255,255,255,0.2) 1px 3px 3px;
+   -webkit-background-clip : text;
+}
+
+.lesson{
+  float: left;
+  clip-path: polygon(0 8%, 53% 8%, 52% 0, 88% 46%, 55% 100%, 55% 92%, 0 93%);
+  background-color:#a2d7dd;
+  width: 50%;
+  height:80%;
+  border-radius: 10px;
+  padding-top:30px;
+}
+.lesson-wrapper  h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: "MS 明朝", serif;
+    border-bottom: 0.8px solid black;
+    width: 230px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin: 8%  auto;
+    transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+}
+.lesson-7 img{
+  height: 300px;
+  width:400px;
+  position: relative;
+  top: 20%;
+}
+.lesson-2{
+  float:right;
+  width:400px;
+  height:500px;
+  border-radius: 10px;
+}
+.lesson-3{
+  float: left; padding-top:10%;
+}
+.lesson-4{
+  float: left;padding-top:10%; padding-left:20px;
+}
+.lesson-5{
+  float: left; padding-top:10%;
+}
+.lesson-6{
+  float: left; padding-top:8%;  padding-left:55px;
+}
+
+.lesson-wrapper-2{
+  width:80%;
+  margin: 0  auto;
+  }
+.item img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.item {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.item p {
+    width: 100%;
+    font-size: 23px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    letter-spacing: 1.5px;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.message-wrapper{
+  width: 1000px;
+}
+
+.good-wrapper{
+  margin-top: 10%;
+}
+.good-wrapper-2{
+   background:#4d5aaf; width:100%;height:450px;
+}
+.good-wrapper h1{
+padding-bottom:5%;
+}
+.good-wrapper-2   h1{
+  text-align: center;
+}
+.item-2{
+  float: left;
+  position: relative;
+  width: 50%;
+}
+.item-2 p {
+    width: 100%;
+    font-size: 23px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    letter-spacing: 1.5px;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 100px;
+    }
+    .contact-2  h2{
+      font-family: "MS 明朝", serif;
+      font-size: 30px;
+      padding-top: 20px;
+     }
+    .contact  p{
+      padding-bottom: 60px;
+    }
+    .contact-3{
+    border:1px solid  black;
+    width:200px;
+    padding: 20px  190px;
+    display: inline-block;
+    transition: all 0.5s;
+      font-family: "MS 明朝", serif;
+      border-radius: 50px;
+    }
+    .contact-3:hover{
+      background-color:#4d5aaf;
+      color: white;
+    }
+    .item img:hover{
+      opacity:0.3;
+       transition: 0.2s;
+    }
+    .lesson  p{
+      padding-top: 20px;
+    }
+    .lesson  span{
+     padding-right: 17%;
+    }
+    .lesson sean{
+       padding-right: 22%;
+    }
+    .lesson-wrapper  img{
+      width: 50%;
+     border-radius: 30px;
+    }
+    .item img{
+      opacity:0.7;
+      border:1px solid  white;
+    }
+    .item-2 img:hover{
+      opacity:0.3;
+      transition: 0.2s;
+    }
+    .item-2{
+      width:50%; height:340px;  color:white; background:#4d5aaf;
+    }
+    .item-2{
+      width:50%; height:340px; background:#4d5aaf;color:white;
+    }
+    .item-2  img{
+      width:100%;
+      height:340px;
+      border:1px solid  white;
+      opacity:0.7;
+    }
+    .lesson  h2{
+      float: left;
+    }
+    .message-wrapper{
+      width:100%;margin-top:10%;
+    }
+    .message-wrapper h1{
+    padding-bottom:5%;  text-align:center;
+    }
+    .contact{
+      text-align:center;  margin-top:15%;
+    }
+    .contact-2  h2{
+    font-family: serif;font-size: 30px;
+    }
+    .contact-3{
+      border:1px solid  black;
+       width:200px;
+       padding: 20px  50px;
+       display: inline-block;
+       margin-top:20px;
+       transition: all 0.5s;
+       font-family:serif;
+       border-radius:50px;
+    }
+    .footer-2 {
+      padding-top: 150px;
+       margin-bottom: 300px;
+       padding-left: 40px;
+       margin:0 auto;
+       width:80%;
+       font-size: 13px;
+        font-family: "MS 明朝";
+        }
+        .footer-3{
+          float: left;
+          width:16.6%;
+          font-family: serif;
+        }
+        .footer-3 p{
+          font-weight:bold;
+        }
+        .footer-3  span{
+
+        }
+        .footer-2{
+          padding-left: 40px;
+        }
+        .footer-3  span{
+         font-weight:bold ;
+        }
+        .dre{
+          padding-left: 120px;
+        }
+        .footer-3 p{
+          padding-bottom: 7px;
+        }
+        .footer-4 p{
+          font-size:10px;
+          padding-left: 150px;
+          padding-bottom: 40px;
+        }
+        .good-wrapper{
+          text-align:center;
+          }

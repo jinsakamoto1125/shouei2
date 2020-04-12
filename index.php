@@ -7,7 +7,7 @@
      <link rel="stylesheet" href="common/common.css">
      <meta name="viewport" content="width=device-wide, initial-scale=1, shrink-to-fit=no">
   </head>
-  <body>
+  <body style="background:#eaf4fc;">
       <header>
 
         <div class="header-left">
@@ -20,30 +20,56 @@
         <h2>私たちと一緒に働きませんか？</h2>
       </div>
     </div>
-    <div class="lesson-wrapper">
-        <h1>Company</h1>
-        <div class="lesson-wrapper-2">
-        <div class="lesson">
-           <h2>会社名</h2>
-           <h3>株式会社昭栄電気産業</h3>
+    <div class="menu-wrapper" style="margin-top:10%;">
+      <div class="menu-wrapper-2" style="padding-left:10%;">
+        <h1 style="font-size:20px;padding-top:10px; color:blue;">ABOUT</h1>
+        <h2 style="font-size:30px; padding-left:20px;">SHO-EIとは？</h2>
+      </div>
+      <div class="clear">
+       </div>
+      <div class="menu-wrapper-3" style="margin: 0 auto;  width:80%;">
+        <p style="font-size:50px; letter-spacing:4px; padding-top:6%;">お客様の安心を当たり前に</p>
+        <p style="font-size:50px; letter-spacing:4px; padding-top:10px;">世の中を私たちが明るく</p>
+        <p style="font-size:50px; letter-spacing:4px; padding-top:10px;">これからも皆様の電気をお守りしていきます</p>
+      </div>
+    </div>
+    <div class="lesson-wrapper" style="margin-top:10%">
+      <div class="lesson-wrapper-4" style="padding-left:10%;">
+        <h1 style="font-size:60px; float:left;">COMPANY</h1>
+        <h2 style="float:left; padding-top:3.5%;; font-size:20px; padding-left:3%; color:blue;">会社概要</h2>
+        <div class="clear">
+        </div>
+        <p style="font-size:60px; color:blue; font-weight:2000;">～</p>
+        </div>
+
+      <div class="lesson-wrapper-2" style="margin:0  auto;  width:80%;">
+        <div class="lesson-wrapper-5" style="float:left;">
+          <img src="img/IMG_2657.JPG" alt="" style="width:500px; height:600px;">
+        </div>
+        <div class="lesson-wrapper-5" style="float:left;">
+            <div class="lesson-wrapper-3" style="float:left;">
+            <p style="font-size:30px;">会社名</p>
+            <p style="font-size:30px;">所在地</p>
+            <p style="font-size:30px;">売上高</p>
+            <p style="font-size:30px;">社員数</p>
+            <p style="font-size:30px;"></p>
+          </div>
+          <div class="lesson-wrapper-3" style=" float:left;  text-align:center;">
+            <p style="font-size:30px;">昭栄電気産業</p>
+            <p style="font-size:30px;"><a href="#">東京都葛飾区鎌倉3-58-2</a></p>
+            <p style="font-size:30px;">??億</p>
+            <p style="font-size:30px;">？？数</p>
+            <p style="font-size:30px;"></p>
+          </div>
           <div class="clear">
           </div>
-         <p class="lesson-5">所在地</p> <a href="#" class="lesson-6">東京都葛飾区鎌倉3-57-1</a>
-         <div class="clear">
-         </div>
-          <p><sean>設立</sean>昭和58年9月13日</p>
-          <p><span>資本金</span>1000万</p>
-          <p><span>代表者</span>代表取締役</p>
-          <p><sean>社員</sean>200名</p>
-          <p><span>売上高</span>3億</p>
         </div>
-        <img src="img/build.jpg" alt="" class="lesson-2"  style="">
-       </div>
-       <div class="clear">
-       </div>
+        <div class="clear">
+        </div>
+      </div>
     </div>
     <div class="good-wrapper">
-      <h1>BUSINESS</h1>
+        <h1 class="fadein active">BUSINESS</h1>
       <div class="good-wrapper-2">
            <ul>
              <li>
@@ -163,5 +189,20 @@
        </div>
         </div>
       </footer>
-  </body>
+      <script src="common/js/jquery.js"></script>
+      <script type="text/javascript">
+      $(function(){
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var position = $(this).offset().top;
+              scroll = $(window).scrollTop();
+                windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200){
+              $(this).addClass('active');
+            }
+          });
+        });
+      });
+ </script>
+ </body>
 </html>

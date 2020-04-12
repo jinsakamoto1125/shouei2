@@ -17,14 +17,18 @@ ul {
 body{
 font-family: serif;
 }
-
 .top-wrapper{
   width: 100%;
-  height:700px;
+  height:900px;
   background-image: url(../img/mati.jpg);
   background-size: cover;
 }
 
+.lesson-wrapper-2{
+  margin: 0 auto;
+  width:60%;
+  text-align: center;
+}
 .top-wrapper-2  h1{
 position: absolute;
 top:5%;
@@ -38,6 +42,23 @@ left: 45%;
 .header-right{
   float:right;
 }
+.fadein {
+  opacity : 0;
+  transform : translate(0, 100px);
+  transition : all 1s;
+}
+.active{
+  opacity : 1;
+  transform : translate(0, 0);
+}
+.menu-wrapper h1{
+  float: left;
+}
+.menu-wrapper h2{
+   float: left;
+}
+
+
 .header-right p{
   float:left;
 }
@@ -70,57 +91,8 @@ left: 45%;
    -webkit-background-clip : text;
 }
 
-.lesson{
-  float: left;
-  clip-path: polygon(0 8%, 53% 8%, 52% 0, 88% 46%, 55% 100%, 55% 92%, 0 93%);
-  background-color:#a2d7dd;
-  width: 50%;
-  height:80%;
-  border-radius: 10px;
-  padding-top:30px;
-}
-.lesson-wrapper  h1{
-    text-align: center;
-    font-size: 70px;
-    font-family: "MS 明朝", serif;
-    border-bottom: 0.8px solid black;
-    width: 230px;
-    text-align: center;
-    margin-bottom: 30px;
-    margin: 8%  auto;
-    transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    -webkit-transform: rotate(-10deg);
-}
-.lesson-7 img{
-  height: 300px;
-  width:400px;
-  position: relative;
-  top: 20%;
-}
-.lesson-2{
-  float:right;
-  width:400px;
-  height:500px;
-  border-radius: 10px;
-}
-.lesson-3{
-  float: left; padding-top:10%;
-}
-.lesson-4{
-  float: left;padding-top:10%; padding-left:20px;
-}
-.lesson-5{
-  float: left; padding-top:10%;
-}
-.lesson-6{
-  float: left; padding-top:8%;  padding-left:55px;
-}
 
-.lesson-wrapper-2{
-  width:80%;
-  margin: 0  auto;
-  }
+
 .item img {
     width: 100%;
     vertical-align: top;
@@ -177,7 +149,7 @@ padding-bottom:5%;
     }
     .contact {
       text-align: center;
-      margin-top: 100px;
+      margin-top: 100px;font-weight:
     }
     .contact-2  h2{
       font-family: "MS 明朝", serif;
@@ -204,19 +176,7 @@ padding-bottom:5%;
       opacity:0.3;
        transition: 0.2s;
     }
-    .lesson  p{
-      padding-top: 20px;
-    }
-    .lesson  span{
-     padding-right: 17%;
-    }
-    .lesson sean{
-       padding-right: 22%;
-    }
-    .lesson-wrapper  img{
-      width: 50%;
-     border-radius: 30px;
-    }
+
     .item img{
       opacity:0.7;
       border:1px solid  white;
@@ -237,11 +197,10 @@ padding-bottom:5%;
       border:1px solid  white;
       opacity:0.7;
     }
-    .lesson  h2{
-      float: left;
-    }
+
     .message-wrapper{
-      width:100%;margin-top:10%;
+      width:100%;
+      margin-top:10%;
     }
     .message-wrapper h1{
     padding-bottom:5%;  text-align:center;

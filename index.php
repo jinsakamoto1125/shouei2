@@ -98,18 +98,22 @@
 <div class="message-wrapper">
     <h1 class="fadein">RECRUIT</h1>
     <div class="message-wrapper-2">
-        <ul>
-            <li class="item-2">
+        <ul class="dilayFadein">
+            <li>
+             <div class="item-2">
                 <img src="img/saiyou.jpg" alt="">
                 <a href="red">
-                    <p>中途採用</p>
+                  <p>中途採用</p>
                 </a>
+               </div>
             </li>
-            <li class="item-2">
+            <li>
+              <div class="item-2">
                 <img src="img/women.jpg" alt="">
                 <a href="red">
-                    <p>アルバイト・パート</p>
+                  <p>アルバイト・パート</p>
                 </a>
+              </div>
             </li>
         </ul>
     </div>
@@ -190,7 +194,7 @@
 <script type="text/javascript">
 
     //5秒かけて表示は遅すぎません？
-    $('#back').fadeIn(5000);
+    $('#back').fadeIn(4000);
     $('#beck').fadeIn(2000);
 
     $(function () {
@@ -217,7 +221,7 @@
                 scroll = $(window).scrollTop();
                 windowHeight = $(window).height();
                 //指定した領域に入った時
-                if (scroll > position - windowHeight + 80) {
+                if (scroll > position - windowHeight + 200) {
                     //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
                     //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
                     $(".item").each(function(i){
@@ -232,6 +236,33 @@
         });
     });
 </script>
+
+<script>
+    $(function () {
+        $(window).scroll(function () {
+            //新しくずらして表示するためのクラスを追加して、
+            // その領域に入った時を条件にする
+            $('.dilayFadein').each(function () {　
+                var position = $(this).offset().top;
+                scroll = $(window).scrollTop();
+                windowHeight = $(window).height();
+                //指定した領域に入った時
+                if (scroll > position - windowHeight + 200) {
+                    //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
+                    //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
+                    $(".item-2").each(function(i){
+                        $(this).delay(200 * i).animate(
+                            {
+                                opacity:1
+                            }
+                        );
+                    });
+                }
+            });
+        });
+    });
+</script>
+
 
 
 <!--script>

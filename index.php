@@ -12,12 +12,12 @@
         <div class="header-left">
             <h1>SHO-<span>EI</span></h1>
         </div>
-        <div class="header-right"
-             style="float:right; text-shadow : rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;-webkit-background-clip : text;font-size:17px; color:white;margin-right: 5%;  margin-top:2%;">
-            <p style="float:left;  color:white;  padding-right:30px;">採用情報</p>
-            <p style="float:left;  color:white;   padding-right:30px">お問い合わせ</p>
-            <p style="float:left;  color:white;   padding-right:30px">会社概要</p>
+        <div class="header-right">
+            <p style="display: inline-block;  color:white;  padding-right:30px;">採用情報</p>
+            <p style="display: inline-block;  color:white;   padding-right:30px">お問い合わせ</p>
+            <p style="display: inline-block;  color:white;   padding-right:30px">会社概要</p>
         </div>
+        <br class="clear">
 </header>
 <div class="top-wrapper" id="beck">
     <div class="top-wrapper-2">
@@ -221,7 +221,7 @@
                 scroll = $(window).scrollTop();
                 windowHeight = $(window).height();
                 //指定した領域に入った時
-                if (scroll > position - windowHeight + 200) {
+                if (scroll > position - windowHeight + 80) {
                     //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
                     //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
                     $(".item").each(function(i){
@@ -230,38 +230,19 @@
                                 opacity:1
                             }
                         );
+                        //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
+                        $(".header-left h1").css("color","black");
                     });
+                } else {
+                    //BUSINESSより前のスクロール量であれば白に戻すって感じです
+                    $(".header-left h1").css("color","white");
                 }
             });
         });
     });
 </script>
 
-<script>
-    $(function () {
-        $(window).scroll(function () {
-            //新しくずらして表示するためのクラスを追加して、
-            // その領域に入った時を条件にする
-            $('.dilayFadein').each(function () {　
-                var position = $(this).offset().top;
-                scroll = $(window).scrollTop();
-                windowHeight = $(window).height();
-                //指定した領域に入った時
-                if (scroll > position - windowHeight + 200) {
-                    //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
-                    //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
-                    $(".item-2").each(function(i){
-                        $(this).delay(200 * i).animate(
-                            {
-                                opacity:1
-                            }
-                        );
-                    });
-                }
-            });
-        });
-    });
-</script>
+
 
 
 

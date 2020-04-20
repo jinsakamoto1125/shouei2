@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 li {
     list-style: none;
 }
@@ -41,10 +48,17 @@ body {
 
 .header-right {
     float: right;
+    width: 25%;
+    min-width: 345px;
+    text-shadow : rgba(255,255,255,0.5) 0 5px 6px,rgba(255,255,255,0.2) 1px 3px 3px;
+    -webkit-background-clip : text;font-size:17px;
+    color:white;margin-right: 5%;
+    margin-top:2%;
 }
 
 .top-wrapper-1 {
     display: none;
+    width: 100% ;
 }
 
 .fadein {
@@ -77,6 +91,7 @@ body {
 
 .header-left {
     float: left;
+    width: 30%;
 }
 
 .header-left h1 {

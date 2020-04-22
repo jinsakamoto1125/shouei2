@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-header {
+.top-wrapper-1 {
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,13 +26,22 @@ body {
     font-family: serif;
 }
 
-.top-wrapper {
-    width: 100%;
-    height: 800px;
-    background-image: url(../img/mati.jpg);
-    background-size: cover;
-    display: none;
-}
+.top-wrapper{
+ width: 100%;
+ height: 800px;
+ background-image: url(../img/mati3.jpg);
+ background-size: cover;
+ transform: translate(0px, -80px);
+ }
+ .active {
+  opacity: 1;
+  transform: translate(0, 0);
+  }
+.fadeleft{
+ opacity: 0;
+ transform: translate(100px, 0);
+ transition: all 5s;
+  }
 
 .top-wrapper-2 h1 {
     position: absolute;
@@ -51,29 +60,14 @@ body {
     width: 25%;
     min-width: 345px;
     text-shadow : rgba(255,255,255,0.5) 0 5px 6px,rgba(255,255,255,0.2) 1px 3px 3px;
-    -webkit-background-clip : text;font-size:17px;
+    -webkit-background-clip:text;font-size:17px;
     color:white;margin-right: 5%;
     margin-top:2%;
 }
-
-.top-wrapper-1 {
-    display: none;
-    width: 100% ;
-}
-
 .fadein {
     opacity: 0;
     transform: translate(0, 100px);
     transition: all 1s;
-}
-
-.item {
-    opacity: 0;
-}
-
-.active {
-    opacity: 1;
-    transform: translate(0, 0);
 }
 
 .menu-wrapper h1 {
@@ -83,9 +77,7 @@ body {
 .menu-wrapper h2 {
     float: left;
 }
-
-
-.header-right p {
+.header-rsight p {
     float: left;
 }
 
@@ -111,7 +103,7 @@ body {
 }
 
 .top-wrapper-2 {
-"color:white
+color:white;
 }
 
 .top-wrapper-2 h1 {
@@ -226,7 +218,6 @@ body {
 }
 
 .item img {
-    opacity: 0.6;
     border: 1px solid white;
 }
 
@@ -246,7 +237,6 @@ body {
     width: 100%;
     height: 340px;
     border: 1px solid white;
-    opacity: 0.6;
 }
 
 .message-wrapper {
@@ -298,10 +288,6 @@ body {
 
 .footer-3 p {
     font-weight: bold;
-}
-
-.footer-3 span {
-
 }
 
 .footer-2 {
@@ -403,8 +389,3 @@ body {
     float: left;
     height: 400px;
 }
-
-
-
-
-

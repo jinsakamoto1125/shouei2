@@ -8,24 +8,25 @@
 </head>
 <body>
 <header>
-    <div class="top-wrapper-1" id="back">
+  <div class="top-wrapper-1">
         <div class="header-left">
             <h1>SHO-<span>EI</span></h1>
         </div>
         <div class="header-right">
-            <p style="display: inline-block;  color:white;  padding-right:30px;">採用情報</p>
-            <p style="display: inline-block;  color:white;   padding-right:30px">お問い合わせ</p>
-            <p style="display: inline-block;  color:white;   padding-right:30px">会社概要</p>
+            <p style="display:inline-block;  color:white;  padding-right:30px;">採用情報</p>
+            <p style="display:inline-block;  color:white;   padding-right:30px">お問い合わせ</p>
+            <p style="display:inline-block;  color:white;   padding-right:30px">会社概要</p>
         </div>
+      </div>
         <br class="clear">
-</header>
-<div class="top-wrapper" id="beck">
+<div class="top-wrapper">
     <div class="top-wrapper-2">
         <h1>街を明るく、</h1>
         <h2 style="font-size:17px;  padding-top:20px;">Illuminate the world</h2>
+      </div>
     </div>
-</div>
-</div>
+  </header>
+
 <!--<div class="menu-wrapper" style="margin-top:10%;">
    <div class="menu-wrapper-2" style="padding-left:10%;">
      <h1 style="font-size:20px;padding-top:10px; color:blue;">ABOUT</h1>
@@ -39,7 +40,7 @@
      <p style="font-size:50px; letter-spacing:4px; padding-top:10px;">これからも皆様の電気をお守りしていきます</p>
    </div>
  </div>-->
-<div id="about" style="margin-top:10%;">
+<!--<div id="about" style="margin-top:10%;">
     <div class="pcWrap fadein">
         <div class="box"></div>
         <div class="wrap">
@@ -62,22 +63,22 @@
         </div>
     </div>
 </div>
-</div>
+</div>-->
 
-<div class="good-wrapper">
-    <h1 class="fadein">BUSINESS</h1>
+<div class="good-wrapper fadein">
+    <h1 >BUSINESS</h1>
     <div class="good-wrapper-2">
-        <ul class="delayFadein">
+        <ul>
             <li>
                 <div class="item" style="background:black;">
                     <a href="red">
-                        <img src="img/kuren.jpg" alt="" style="height:450px;">
+                        <img src="img/hosyu2.jpg" alt="" style="height:450px;">
                         <p>保守</p>
                     </a>
                 </div>
                 <div class="item" style="background:black;">
                     <a href="red">
-                        <img src="img/hozenn.jpg" alt="" style="height:225px;">
+                        <img src="img/hozen.jpg" alt="" style="height:225px;">
                         <p>保全</p>
                     </a>
                 </div>
@@ -96,12 +97,12 @@
     </div>
 </div>
 <div class="message-wrapper">
-    <h1 class="fadein">RECRUIT</h1>
+    <h1>RECRUIT</h1>
     <div class="message-wrapper-2">
         <ul class="dilayFadein">
             <li>
              <div class="item-2">
-                <img src="img/saiyou.jpg" alt="">
+                <img src="img/IMG_E2774.JPG" alt="">
                 <a href="red">
                   <p>中途採用</p>
                 </a>
@@ -121,17 +122,17 @@
 <div class="clear">
 
 </div>
-<div class="contact  fadein">
+<div class="contact">
     <div class="contact-2">
         <h2>ENTRY</h2>
         <p>昭栄電気産業に関する募集要項とエントリーフォームはこちら。</p>
-        <div class="contact-3  fadein">応募する</div>
+        <div class="contact-3">応募する</div>
         <div class="clear">
         </div>
     </div>
 </div>
 <footer>
-    <div class="footer fadein">
+    <div class="footer">
         <div class="footer-2">
             <div class="footer-3">
                 <p>理念</p>
@@ -192,10 +193,8 @@
 </footer>
 <script src="common/js/jquery.js"></script>
 <script type="text/javascript">
-
     //5秒かけて表示は遅すぎません？
-    $('#back').fadeIn(4000);
-    $('#beck').fadeIn(2000);
+    $('.fadeleft').addClass('active');
 
     $(function () {
         $(window).scroll(function () {

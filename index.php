@@ -8,6 +8,7 @@
 </head>
 <body>
 <header>
+
   <div class="top-wrapper-1">
         <div class="header-left">
             <h1>SHO-<span>EI</span></h1>
@@ -65,9 +66,9 @@
 </div>
 </div>-->
 
-<div class="good-wrapper fadein">
-    <h1 >BUSINESS</h1>
-    <div class="good-wrapper-2">
+<div class="good-wrapper">
+    <h1  id="title">BUSINESS</h1>
+    <div class="good-wrapper-2  fadein">
         <ul>
             <li>
                 <div class="item" style="background:black;">
@@ -97,7 +98,7 @@
     </div>
 </div>
 <div class="message-wrapper">
-    <h1>RECRUIT</h1>
+    <h1  id="title">RECRUIT</h1>
     <div class="message-wrapper-2">
         <ul class="dilayFadein">
             <li>
@@ -124,7 +125,7 @@
 </div>
 <div class="contact">
     <div class="contact-2">
-        <h2>ENTRY</h2>
+        <h2 id="title">ENTRY</h2>
         <p>昭栄電気産業に関する募集要項とエントリーフォームはこちら。</p>
         <div class="contact-3">応募する</div>
         <div class="clear">
@@ -193,23 +194,21 @@
 </footer>
 <script src="common/js/jquery.js"></script>
 <script type="text/javascript">
-    //5秒かけて表示は遅すぎません？
-    $('.fadeleft').addClass('active');
-
+    //5秒かけて表示は遅すぎません?
     $(function () {
+      $('#title').show(3000);
         $(window).scroll(function () {
             $('.fadein').each(function () {
                 var position = $(this).offset().top;
                 scroll = $(window).scrollTop();
                 windowHeight = $(window).height();
-                if (scroll > position - windowHeight + 80) {
+                if (scroll > position - windowHeight + 200) {
                     $(this).addClass('active');
                 }
             });
         });
     });
 </script>
-
 <script>
     $(function () {
         $(window).scroll(function () {
@@ -240,44 +239,5 @@
         });
     });
 </script>
-
-
-
-
-
-<!--script>
-    ここは全部いらないです
-    var effect_btm = 300; // 画面下からどの位置でフェードさせるか(px)
-    var effect_move = 50; // どのぐらい要素を動かすか(px)
-    var effect_time = 800; // エフェクトの時間(ms) 1秒なら1000
-
-    // スクロールまたはロードするたびに実行
-    $(window).on('scroll load', function () {
-        var scroll_top = $(this).scrollTop();
-        var scroll_btm = scroll_top + $(this).height();
-        var effect_pos = scroll_btm - effect_btm;
-
-        //エフェクトが発動したとき、子要素をずらしてフェードさせる
-        $('.scroll-fade-row').each(function () {
-            var this_pos = $(this).offset().top;
-            if (effect_pos > this_pos) {
-                $(this).css({
-                    opacity: 1,
-                    transform: 'translateY(0)'
-                });
-                $(this).children().each(function (i) {
-                    $(this).delay(100 + i * 200).queue(function () {
-                        $(this).css({
-                            opacity: 1,
-                            transform: 'translateY(0)'
-                        }).dequeue();
-                    });
-                });
-            }
-        });
-    });
-</script-->
-
-
 </body>
 </html>

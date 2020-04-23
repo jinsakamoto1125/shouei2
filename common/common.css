@@ -13,11 +13,12 @@
 li {
     list-style: none;
 }
-
 ul {
     list-style: none;
 }
-
+h1{
+  display: none;
+}
 .clear {
     clear: both;
 }
@@ -37,10 +38,10 @@ body {
   opacity: 1;
   transform: translate(0, 0);
   }
-.fadeleft{
+.fadein{
  opacity: 0;
- transform: translate(100px, 0);
- transition: all 5s;
+ transform: translate(0px, 50px;);
+ transition: all 2s;
   }
 
 .top-wrapper-2 h1 {
@@ -64,7 +65,7 @@ body {
     color:white;margin-right: 5%;
     margin-top:2%;
 }
-.fadein {
+#fadein {
     opacity: 0;
     transform: translate(0, 100px);
     transition: all 1s;
@@ -73,6 +74,7 @@ body {
 .menu-wrapper h1 {
     float: left;
 }
+
 
 .menu-wrapper h2 {
     float: left;

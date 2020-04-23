@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <title>昭栄電気産業</title>
     <link rel="stylesheet" href="common/common.css">
-    <meta name="viewport" content="width=device-wide, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 <header>
 
-  <div class="top-wrapper-1">
+  <div class="top-wrapper-1" id="back">
         <div class="header-left">
             <h1>SHO-<span>EI</span></h1>
         </div>
@@ -67,9 +66,9 @@
 </div>-->
 
 <div class="good-wrapper">
-    <h1  id="title">BUSINESS</h1>
-    <div class="good-wrapper-2  fadein">
-        <ul>
+    <h1 class="fadein">BUSINESS</h1>
+    <div class="good-wrapper-2">
+        <ul class="delayFadein">
             <li>
                 <div class="item" style="background:black;">
                     <a href="red">
@@ -123,9 +122,9 @@
 <div class="clear">
 
 </div>
-<div class="contact">
+<div class="contact  fadein">
     <div class="contact-2">
-        <h2 id="title">ENTRY</h2>
+        <h2 class="fadein">ENTRY</h2>
         <p>昭栄電気産業に関する募集要項とエントリーフォームはこちら。</p>
         <div class="contact-3">応募する</div>
         <div class="clear">
@@ -195,18 +194,19 @@
 <script src="common/js/jquery.js"></script>
 <script type="text/javascript">
     //5秒かけて表示は遅すぎません?
+    $('#title').show(3000);
+    $('#back').fadeIn(4000);
     $(function () {
-      $('#title').show(3000);
-        $(window).scroll(function () {
-            $('.fadein').each(function () {
-                var position = $(this).offset().top;
-                scroll = $(window).scrollTop();
-                windowHeight = $(window).height();
-                if (scroll > position - windowHeight + 200) {
-                    $(this).addClass('active');
-                }
-            });
+      $(window).scroll(function () {
+        $('.fadein').each(function () {
+          var position = $(this).offset().top;
+          scroll = $(window).scrollTop();
+          windowHeight = $(window).height();
+          if (scroll > position - windowHeight + 200) {
+            $(this).addClass('active');
+          }
         });
+      });
     });
 </script>
 <script>
@@ -238,6 +238,39 @@
             });
         });
     });
+</script>
+<script>
+$(function () {
+    $(window).scroll(function () {
+        //新しくずらして表示するためのクラスを追加して、
+        // その領域に入った時を条件にする
+        $('.dilayFadein').each(function () {　
+            var position = $(this).offset().top;
+            scroll = $(window).scrollTop();
+            windowHeight = $(window).height();
+            //指定した領域に入った時
+            if (scroll > position - windowHeight + 80) {
+                //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
+                //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
+                $(".item-2").each(function(i){
+                    $(this).delay(200 * i).animate(
+                        {
+                            opacity:1
+                        }
+                    );
+                    //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
+                    $(".header-left h1").css("color","black");
+                });
+            } else {
+                //BUSINESSより前のスクロール量であれば白に戻すって感じです
+                $(".header-left h1").css("color","white");
+            }
+        });
+    });
+});
+</script>
+<script>
+
 </script>
 </body>
 </html>

@@ -6,23 +6,23 @@
     <link rel="stylesheet" href="common/common.css">
 </head>
 <body>
-  <div class="top-wrapper-1">
-        <div class="header-left  fadeleft">
-            <h1>SHO-<span  class="fadeleft">EI</span></h1>
-        </div>
-        <div class="header-right fadeleft">
-            <a href="#href" style="display:inline-block;  color:white;  padding-right:30px;">採用情報</a>
-            <a href="#href2" style="display:inline-block;  color:white;   padding-right:30px">お問い合わせ</a>
-            <a href="confirm.php" style="display:inline-block;  color:white;   padding-right:30px">会社概要</a>
-        </div>
-      </div>
-        <br class="clear">
+<div class="top-wrapper-1">
+    <div class="header-left  fadeleft">
+        <h1>SHO-<span class="fadeleft">EI</span></h1>
+    </div>
+    <div class="header-right fadeleft">
+        <a href="#href" style="display:inline-block;  color:white;  padding-right:30px;">採用情報</a>
+        <a href="#href2" style="display:inline-block;  color:white;   padding-right:30px">お問い合わせ</a>
+        <a href="confirm.php" style="display:inline-block;  color:white;   padding-right:30px">会社概要</a>
+    </div>
+</div>
+<br class="clear">
 <div class="top-wrapper fadeleft2">
     <div class="top-wrapper-2">
         <h1>街を明るく、</h1>
         <h2 style="font-size:17px;  padding-top:20px;">Illuminate the world</h2>
-      </div>
     </div>
+</div>
 
 <!--<div class="menu-wrapper" style="margin-top:10%;">
    <div class="menu-wrapper-2" style="padding-left:10%;">
@@ -93,35 +93,35 @@
         </div>
     </div>
 </div>
-<div class="message-wrapper"  id="href">
+<div class="message-wrapper" id="href">
     <h1 class="fadein">RECRUIT</h1>
     <div class="message-wrapper-2">
         <ul class="dilayFadein">
             <li>
-             <div class="item-2">
-                <img src="img/IMG_E2774.JPG" alt="">
-                <a href="red">
-                  <p>中途採用</p>
-                </a>
-               </div>
+                <div class="item-2">
+                    <img src="img/IMG_E2774.JPG" alt="">
+                    <a href="red">
+                        <p>中途採用</p>
+                    </a>
+                </div>
             </li>
             <li>
-              <div class="item-2">
-                <img src="img/women.jpg" alt="">
-                <a href="red">
-                  <p>アルバイト・パート</p>
-                </a>
-              </div>
+                <div class="item-2">
+                    <img src="img/women.jpg" alt="">
+                    <a href="red">
+                        <p>アルバイト・パート</p>
+                    </a>
+                </div>
             </li>
         </ul>
     </div>
 </div>
 <div class="clear">
 </div>
-<div class="contact"  id="href2">
+<div class="contact" id="href2">
     <div class="contact-2  fadein">
         <h2>ENTRY</h2>
-        <p  style="padding-top:20px;">昭栄電気産業に関する募集要項とエントリーフォームはこちら。</p>
+        <p style="padding-top:20px;">昭栄電気産業に関する募集要項とエントリーフォームはこちら。</p>
         <div class="contact-3">応募する</div>
         <div class="clear">
         </div>
@@ -193,31 +193,26 @@
     $('.fadeleft').show(5000);
     $('.fade2left').addClass('active');
     $(function () {
-      $(window).scroll(function () {
-        $('.fadein').each(function () {
-          var position = $(this).offset().top;
-          var scroll = $(window).scrollTop();
-          var windowHeight = $(window).height();
-          if (scroll > position - windowHeight + 200) {
-            $(this).addClass('active');
-          }
+        $(window).scroll(function () {
+            $('.fadein').each(function () {
+                var position = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > position - windowHeight + 200) {
+                    $(this).addClass('active');
+                }
+            });
         });
-      });
     });
 </script>
+
+
 <script>
     $(function () {
-      $('.header-right a').click(function(){
-        var id = $(this).attr('href');
-        var position = $(id).offset().top;
-        $('html, body').animate({
-          'scrollTop' : position
-        },500);
-      });
         $(window).scroll(function () {
             //新しくずらして表示するためのクラスを追加して、
             // その領域に入った時を条件にする
-            $('.delayFadein').each(function () {　
+            $('.delayFadein').each(function () {
                 var position = $(this).offset().top;
                 scroll = $(window).scrollTop();
                 windowHeight = $(window).height();
@@ -225,52 +220,63 @@
                 if (scroll > position - windowHeight + 80) {
                     //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
                     //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
-                    $(".item").each(function(i){
+                    $(".item").each(function (i) {
                         $(this).delay(200 * i).animate(
                             {
-                                opacity:1
+                                opacity: 1
                             }
                         );
                         //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
-                        $(".top-wrapper-1").css("background","#84a2d4");
+                        $(".top-wrapper-1").css("background", "#84a2d4");
                     });
                 } else {
                     //BUSINESSより前のスクロール量であれば白に戻すって感じです
-                    $(".header-left h1").css("color","white");
-                },
+                    $(".header-left h1").css("color", "white");
+                }
             });
         });
     });
 </script>
+
 <script>
-$(function () {
-    $(window).scroll(function () {
-        //新しくずらして表示するためのクラスを追加して、
-        // その領域に入った時を条件にする
-        $('.dilayFadein').each(function () {　
-            var position = $(this).offset().top;
-            scroll = $(window).scrollTop();
-            windowHeight = $(window).height();
-            //指定した領域に入った時
-            if (scroll > position - windowHeight + 80) {
-                //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
-                //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
-                $(".item-2").each(function(i){
-                    $(this).delay(200 * i).animate(
-                        {
-                            opacity:1
-                        }
-                    );
-                    //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
-                    $(".header-left h1").css("color","black");
-                });
-            } else {
-                //BUSINESSより前のスクロール量であれば白に戻すって感じです
-                $(".header-left h1").css("color","white");
-            }
+    $('.header-right a').click(function () {
+        var id = $(this).attr('href');
+        var position = $(id).offset().top;
+        $('html, body').animate({
+            'scrollTop': position
+        }, 500);
+    });
+</script>
+
+<script>
+    $(function () {
+        $(window).scroll(function () {
+            //新しくずらして表示するためのクラスを追加して、
+            // その領域に入った時を条件にする
+            $('.delayFadein').each(function () {
+                var position = $(this).offset().top;
+                scroll = $(window).scrollTop();
+                windowHeight = $(window).height();
+                //指定した領域に入った時
+                if (scroll > position - windowHeight + 80) {
+                    //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
+                    //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
+                    $(".item-2").each(function (i) {
+                        $(this).delay(200 * i).animate(
+                            {
+                                opacity: 1
+                            }
+                        );
+                        //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
+                        $(".header-left h1").css("color", "black");
+                    });
+                } else {
+                    //BUSINESSより前のスクロール量であれば白に戻すって感じです
+                    $(".header-left h1").css("color", "white");
+                }
+            });
         });
-      });
-});
+    });
 </script>
 <script>
 

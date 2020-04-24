@@ -37,9 +37,10 @@ body {
 
 .top-wrapper {
     width: 100%;
-    height: 900px;
+    height: 800px;
     background-image: url(../img/mati3.jpg);
     background-size: cover;
+    transform: translate(100px, 0px);
 }
 
 .header-left span {
@@ -50,10 +51,10 @@ body {
     display: none;
 }
 
-.fade2left{
+.fadenight {
     opacity: 0;
-    transform: translate(-70px, 0px);
-    transition: all 3s;
+    transform: translate(-30px, 0px);
+    transition: all 7s;
 }
 
 .fadein {
@@ -64,7 +65,7 @@ body {
 
 .active {
     opacity: 1;
-    transform: translate(0px, 0px);
+    transform: translate(0px, -30px);
 }
 
 .item {

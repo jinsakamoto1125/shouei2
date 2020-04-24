@@ -191,7 +191,7 @@
 <script type="text/javascript">
     //5秒かけて表示は遅すぎません
     $('.fadeleft').show(5000);
-   $('.fadenight').addClass('active');
+   $('.fadenight'). addClass('active');
     $(function () {
         $(window).scroll(function () {
             $('.fadein').each(function () {

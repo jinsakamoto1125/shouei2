@@ -6,26 +6,23 @@
     <link rel="stylesheet" href="common/common.css">
 </head>
 <body>
-<header>
-
-  <div class="top-wrapper-1" id="back">
-        <div class="header-left">
-            <h1>SHO-<span>EI</span></h1>
+  <div class="top-wrapper-1">
+        <div class="header-left  fadeleft">
+            <h1>SHO-<span  class="fadeleft">EI</span></h1>
         </div>
-        <div class="header-right">
-            <p style="display:inline-block;  color:white;  padding-right:30px;">採用情報</p>
-            <p style="display:inline-block;  color:white;   padding-right:30px">お問い合わせ</p>
-            <p style="display:inline-block;  color:white;   padding-right:30px">会社概要</p>
+        <div class="header-right fadeleft">
+            <a href="#href" style="display:inline-block;  color:white;  padding-right:30px;">採用情報</a>
+            <a href="#href2" style="display:inline-block;  color:white;   padding-right:30px">お問い合わせ</a>
+            <a href="confirm.php" style="display:inline-block;  color:white;   padding-right:30px">会社概要</a>
         </div>
       </div>
         <br class="clear">
-<div class="top-wrapper">
+<div class="top-wrapper fadeleft2">
     <div class="top-wrapper-2">
         <h1>街を明るく、</h1>
         <h2 style="font-size:17px;  padding-top:20px;">Illuminate the world</h2>
       </div>
     </div>
-  </header>
 
 <!--<div class="menu-wrapper" style="margin-top:10%;">
    <div class="menu-wrapper-2" style="padding-left:10%;">
@@ -96,8 +93,8 @@
         </div>
     </div>
 </div>
-<div class="message-wrapper">
-    <h1  id="title">RECRUIT</h1>
+<div class="message-wrapper"  id="href">
+    <h1 class="fadein">RECRUIT</h1>
     <div class="message-wrapper-2">
         <ul class="dilayFadein">
             <li>
@@ -120,12 +117,11 @@
     </div>
 </div>
 <div class="clear">
-
 </div>
-<div class="contact  fadein">
-    <div class="contact-2">
-        <h2 class="fadein">ENTRY</h2>
-        <p>昭栄電気産業に関する募集要項とエントリーフォームはこちら。</p>
+<div class="contact"  id="href2">
+    <div class="contact-2  fadein">
+        <h2>ENTRY</h2>
+        <p  style="padding-top:20px;">昭栄電気産業に関する募集要項とエントリーフォームはこちら。</p>
         <div class="contact-3">応募する</div>
         <div class="clear">
         </div>
@@ -193,15 +189,15 @@
 </footer>
 <script src="common/js/jquery.js"></script>
 <script type="text/javascript">
-    //5秒かけて表示は遅すぎません?
-    $('#title').show(3000);
-    $('#back').fadeIn(4000);
+    //5秒かけて表示は遅すぎません
+    $('.fadeleft').show(5000);
+    $('.fade2left').addClass('active');
     $(function () {
       $(window).scroll(function () {
         $('.fadein').each(function () {
           var position = $(this).offset().top;
-          scroll = $(window).scrollTop();
-          windowHeight = $(window).height();
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
           if (scroll > position - windowHeight + 200) {
             $(this).addClass('active');
           }
@@ -211,6 +207,13 @@
 </script>
 <script>
     $(function () {
+      $('.header-right a').click(function(){
+        var id = $(this).attr('href');
+        var position = $(id).offset().top;
+        $('html, body').animate({
+          'scrollTop' : position
+        },500);
+      });
         $(window).scroll(function () {
             //新しくずらして表示するためのクラスを追加して、
             // その領域に入った時を条件にする
@@ -229,12 +232,12 @@
                             }
                         );
                         //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
-                        $(".header-left h1").css("color","black");
+                        $(".top-wrapper-1").css("background","#84a2d4");
                     });
                 } else {
                     //BUSINESSより前のスクロール量であれば白に戻すって感じです
                     $(".header-left h1").css("color","white");
-                }
+                },
             });
         });
     });
@@ -266,7 +269,7 @@ $(function () {
                 $(".header-left h1").css("color","white");
             }
         });
-    });
+      });
 });
 </script>
 <script>

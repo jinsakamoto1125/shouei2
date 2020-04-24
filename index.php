@@ -191,7 +191,7 @@
 <script type="text/javascript">
     //5秒かけて表示は遅すぎません
     $('.fadeleft').show(5000);
-    $('.fade2left').addClass('active');
+      $('.fadeleft2'). addClass('active');
     $(function () {
         $(window).scroll(function () {
             $('.fadein').each(function () {
@@ -214,7 +214,7 @@
             // その領域に入った時を条件にする
             $('.delayFadein').each(function () {
                 var position = $(this).offset().top;
-                scroll = $(window).scrollTop();
+                scroll = $(window). scrollTop();
                 windowHeight = $(window).height();
                 //指定した領域に入った時
                 if (scroll > position - windowHeight + 80) {
@@ -227,7 +227,7 @@
                             }
                         );
                         //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
-                        $(".top-wrapper-1").css("background", "#84a2d4");
+                        $(".top-wrapper-1").css("color", "black");
                     });
                 } else {
                     //BUSINESSより前のスクロール量であれば白に戻すって感じです

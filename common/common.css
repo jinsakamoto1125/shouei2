@@ -40,7 +40,6 @@ body {
     height: 900px;
     background-image: url(../img/mati3.jpg);
     background-size: cover;
-    transform: translate(0px, -100px);
 }
 
 .header-left span {
@@ -51,9 +50,9 @@ body {
     display: none;
 }
 
-.fade2left {
+.fade2left{
     opacity: 0;
-    transform: translate(-30px, 0px);
+    transform: translate(-70px, 0px);
     transition: all 3s;
 }
 

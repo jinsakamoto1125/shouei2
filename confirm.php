@@ -17,19 +17,19 @@
                 <p style="color:white; padding-right:30px">お問い合わせ</p>
             </div>
              </div>
-            <div class="hed">
+           </header>
+           <!-- <div class="hed">
        <h1 style="color:white; position:absolute; top:12%;  left:10%; font-size:90px;  letter-spacing:5px;  float:left;">ABOUT</h1>
        <h2 style="color:white; position:absolute; top:12%;  left:40%; font-size:90px;  letter-spacing:5px; font-size:90px;">US</h2>
        <p style="color:white;position:absolute; top:27%;  left:10%;  font-weight:1000;">私たちについて</p>
-      </div>
-    </header>
-    <div class="lesson-wrapper" style="margin-top:10%">
-      <div class="lesson-wrapper-4" style="padding-left:10%;">
-        <h1 style="font-size:60px; float:left;  color:#192f60;">COMPANY</h1>
-        <h2  style=" float:left; padding-top:3%;  font-size:15px; padding-left:5%;">会社概要</h2>
+     </div>-->
+    <div class="lesson-wrapper" style="margin-top:7%;">
+      <div class="lesson-wrapper-4" style="padding-left:10%;  margin:0 auto; width:60%;">
+        <h1 style="font-size:80px; float:left;  color:#192f60;">COMPANY</h1>
+        <h2  style=" float:left; padding-top:7%;  font-size:25px; padding-left:5%;">会社概要</h2>
         <div class="clear">
         </div>
-        <i class="fas fa-building"  style="font-size:30px; padding-left:2%; padding-top:3%;"></i>
+        <!--<i class="fas fa-building"  style="font-size:30px; padding-left:2%; padding-top:3%;"></i>-->
         </div>
     <div class="lesson-wrapper-2" style="margin:0  auto;  width:90%;  margin-bottom:10%;">
       <div class="lesson-wrapper-1" style="display: flex;justify-content: space-between;">

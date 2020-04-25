@@ -69,13 +69,13 @@
             <li>
                 <div class="item" style="background:black;">
                     <a href="red">
-                        <img src="img/hosyu2.jpg" alt="" style="height:450px;">
+                        <img src="img/IMG_2732.JPG" alt="" style="height:450px;">
                         <p>保守</p>
                     </a>
                 </div>
                 <div class="item" style="background:black;">
                     <a href="red">
-                        <img src="img/hozen.jpg" alt="" style="height:225px;">
+                        <img src="img/IMG_2732.JPG" alt="" style="height:225px;">
                         <p>保全</p>
                     </a>
                 </div>
@@ -93,8 +93,8 @@
         </div>
     </div>
 </div>
-<div class="message-wrapper" id="href">
-    <h1 class="fadein">RECRUIT</h1>
+<div class="message-wrapper">
+    <h1 class="fadein"  id="href">RECRUIT</h1>
     <div class="message-wrapper-2">
         <ul class="dilayFadein">
             <li>
@@ -227,11 +227,12 @@
                             }
                         );
                         //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
-                        $(".top-wrapper-1").css("color", "black");
+                        $(".header-right  a").css("color", "black");
+                        $(".header-right  a").css("font-weight", "1000");
                     });
                 } else {
                     //BUSINESSより前のスクロール量であれば白に戻すって感じです
-                    $(".header-left h1").css("color", "white");
+                    $(".header-right a").css("color", "white");
                 }
             });
         });
@@ -253,7 +254,7 @@
         $(window).scroll(function () {
             //新しくずらして表示するためのクラスを追加して、
             // その領域に入った時を条件にする
-            $('.delayFadein').each(function () {
+            $('.dilayFadein').each(function () {
                 var position = $(this).offset().top;
                 scroll = $(window).scrollTop();
                 windowHeight = $(window).height();
@@ -268,18 +269,11 @@
                             }
                         );
                         //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
-                        $(".header-left h1").css("color", "black");
                     });
-                } else {
-                    //BUSINESSより前のスクロール量であれば白に戻すって感じです
-                    $(".header-left h1").css("color", "white");
                 }
             });
         });
     });
-</script>
-<script>
-
 </script>
 </body>
 </html>

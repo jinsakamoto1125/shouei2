@@ -9,13 +9,19 @@
   </head>
   <body style="background:#f7fcfe">
     <header>
-        <div class="hed2" style=" position: fixed; position: fixed;top: 0;z-index: 10; width:100%;">
-            <div class="header-left">
-                <h1>SHO-<span>EI</span></h1>
+        <div class="hed11">
+           <div class="header-left11">
+             <h1 style="color:black;">shouei</h1>
+           </div>
+            <div class="header-right2" style="float:right;font-size:17px; color:white;">
+                <p style="color:black; padding-right:30px">お問い合わせ</p>
             </div>
-            <div class="header-right faderight" style="float:right;font-size:17px; color:white; margin-right: 5%;  margin-top:2%;">
-                <p style="color:white; padding-right:30px">お問い合わせ</p>
-            </div>
+             </div>
+             <div class="lesson-wrapper-4" style="padding-left:10%;  margin:0 auto; width:60%;">
+               <h1 style="font-size:80px; float:left;  color:#192f60;">COMPANY</h1>
+               <h2  style=" float:left; padding-top:7%;  font-size:25px; padding-left:5%;">会社概要</h2>
+               <div class="clear">
+               </div>
              </div>
            </header>
            <!-- <div class="hed">
@@ -23,14 +29,7 @@
        <h2 style="color:white; position:absolute; top:12%;  left:40%; font-size:90px;  letter-spacing:5px; font-size:90px;">US</h2>
        <p style="color:white;position:absolute; top:27%;  left:10%;  font-weight:1000;">私たちについて</p>
      </div>-->
-    <div class="lesson-wrapper" style="margin-top:7%;">
-      <div class="lesson-wrapper-4" style="padding-left:10%;  margin:0 auto; width:60%;">
-        <h1 style="font-size:80px; float:left;  color:#192f60;">COMPANY</h1>
-        <h2  style=" float:left; padding-top:7%;  font-size:25px; padding-left:5%;">会社概要</h2>
-        <div class="clear">
-        </div>
-        <!--<i class="fas fa-building"  style="font-size:30px; padding-left:2%; padding-top:3%;"></i>-->
-        </div>
+    <div class="lesson-wrapper">
     <div class="lesson-wrapper-2" style="margin:0  auto;  width:90%;  margin-bottom:10%;">
       <div class="lesson-wrapper-1" style="display: flex;justify-content: space-between;">
         <div class="lesson-wrapper-5" style="float:left;">

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>昭栄電気産業</title>
     <link rel="stylesheet" href="common/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700">
 </head>
 <body>
 <div class="top-wrapper-1">
@@ -19,8 +20,8 @@
 <br class="clear">
 <div class="top-wrapper fadenight">
     <div class="top-wrapper-2">
-        <h1>街を明るく、</h1>
-        <h2 style="font-size:17px;  padding-top:20px;">Illuminate the world</h2>
+        <h1 style="font-size:20px;">街を照らせ、</h1>
+        <h2 style="font-size:15px;">Illuminate the world</h2>
     </div>
 </div>
 
@@ -63,13 +64,13 @@
 </div>-->
 
 <div class="good-wrapper">
-    <h1 class="fadein">BUSINESS</h1>
+    <h1 class="fadein" style="font-weight: 200;font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;">BUSINESS</h1>
     <div class="good-wrapper-2">
         <ul class="delayFadein">
             <li>
                 <div class="item" style="background:black;">
                     <a href="red">
-                        <img src="img/IMG_2732.JPG" alt="" style="height:450px;">
+                        <img src="img/IMG2.png" alt="" style="height:450px;">
                         <p>保守</p>
                     </a>
                 </div>
@@ -94,7 +95,7 @@
     </div>
 </div>
 <div class="message-wrapper">
-    <h1 class="fadein"  id="href">RECRUIT</h1>
+    <h1 class="fadein"  id="href" style="font-weight: 200;font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;">RECRUIT</h1>
     <div class="message-wrapper-2">
         <ul class="dilayFadein">
             <li>
@@ -107,7 +108,7 @@
             </li>
             <li>
                 <div class="item-2">
-                    <img src="img/women.jpg" alt="">
+                    <img src="img/IMG_2818.JPG" alt="">
                     <a href="red">
                         <p>アルバイト・パート</p>
                     </a>
@@ -120,7 +121,7 @@
 </div>
 <div class="contact" id="href2">
     <div class="contact-2  fadein">
-        <h2>ENTRY</h2>
+        <h2 style="font-weight: 100;font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;">ENTRY</h2>
         <p style="padding-top:20px;">昭栄電気産業に関する募集要項とエントリーフォームはこちら。</p>
         <div class="contact-3">応募する</div>
         <div class="clear">

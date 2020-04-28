@@ -19,6 +19,10 @@ ul {
 .clear {
     clear: both;
 }
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
 
 body {
    font-family: serif;
@@ -29,6 +33,12 @@ body {
   background-image: url(../img/mati3.jpg);
   background-size: cover;
 }*/
+header{
+  width:100%;
+  height:400px;
+  background-image: url(../img/IMG_2820.JPG);
+  background-size: cover;
+}
 
 .top-wrapper-1 {
     position: fixed;
@@ -43,10 +53,9 @@ body {
 
 .top-wrapper {
     width: 100%;
-    height: 505px;
+    height:800px;
     background-image: url(../img/IMG_2871.JPG);
     background-size:cover;
-    background-size: contain;
 }
 
 .header-left span {
@@ -81,6 +90,18 @@ body {
 .item-2 {
     opacity: 0;
 }
+.section-title{
+    font-family: "MS 明朝", serif;
+    padding-top: 60px;
+    font-size: 35px;
+    border-bottom: 0.8px solid black;
+    width: 110px;
+    text-align: center;
+    margin: 0 auto;
+    transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+}
 
 .top-wrapper-2 h1 {
     position: absolute;
@@ -92,6 +113,55 @@ body {
     position: absolute;
     top: 30%;
     left: 62%;
+}
+.new3{
+   writing-mode: vertical-rl;
+   float:left;
+}
+.new5{
+  float:right;
+}
+.news{
+  margin-top:10%;
+}
+.fed{
+  width: 912px;
+  padding: 70px 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.fed2{
+  float:left;
+  margin-top:32px;
+}
+.fed3{
+  writing-mode: vertical-rl;
+  letter-spacing: 5px;
+  font-size:24px;
+}
+.fed5{
+  width: 782px;
+  float: right;
+}
+.fed5 li{
+  padding: 32px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #aabcc2;
+}
+.red{
+  width: 146px;
+  float: left;
+  font-size: 14px;
+}
+.red2{
+  font-style: normal;
+}
+.blue{
+  width: 636px;
+  float: left;
+}
+.blue2{
+ font-style: normal;
 }
 
 .header-right {
@@ -114,9 +184,6 @@ body {
     float: left;
 }
 
-.header-rsight p {
-    float: left;
-}
 
 .header-left {
     float: left;
@@ -278,7 +345,6 @@ body {
 
 .message-wrapper {
     width: 100%;
-    margin-top: 10%;
 }
 
 .message-wrapper h1 {
@@ -353,7 +419,7 @@ body {
     text-align: center;
 }
 
-#about {
+/*#about {
     width: 100%;
     background: black;
 }
@@ -425,4 +491,4 @@ body {
     background: black;
     float: left;
     height: 400px;
-}
+}*/

@@ -24,7 +24,52 @@
         <h2 style="font-size:15px;">Illuminate the world</h2>
     </div>
 </div>
-
+<div class="fadein" style="margin-top:5%;">
+  <h3 class="section-title">NEWS</h3>
+  </div>
+   <div class="news" style="margin:5% auto; width:80%;display: flex;justify-content: space-between;">
+     <div class="new3  fadein" style="font-size:60px; width:20%;">
+       <p>Recent Situation</p>
+     </div>
+          <ul class="dalayFadein"  style="width:70%;">
+            <li style="margin-bottom:10%;">
+              <div class="newtime">
+                <p class="newtime2" style="float:left;font-size:20px;">2020.04.19</p>
+              <p style="float:left;padding-left:50px;font-size:18px;">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
+              <br class="clear">
+            </div>
+           </li>
+           <li style="margin-bottom:10%;">
+             <div class="newtime">
+               <p class="newtime2" style="float:left;font-size:20px;">2020.04.19</p>
+             <p style="float:left;padding-left:50px;font-size:18px;">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
+             <br class="clear">
+           </div>
+          </li>
+          <li style="margin-bottom:10%;">
+            <div class="newtime">
+              <p class="newtime2" style="float:left;font-size:20px;">2020.04.19</p>
+            <p style="float:left;padding-left:50px;font-size:18px;">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
+            <br class="clear">
+          </div>
+         </li>
+         <li style="margin-bottom:10%;">
+           <div class="newtime">
+             <p class="newtime2" style="float:left;font-size:20px;">2020.04.19</p>
+           <p style="float:left;padding-left:50px;font-size:18px;">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
+           <br class="clear">
+         </div>
+        </li>
+        <li style="margin-bottom:10%;">
+          <div class="newtime">
+            <p class="newtime2" style="float:left;font-size:20px;">2020.04.19</p>
+          <p style="float:left;padding-left:50px;font-size:18px;">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
+          <br class="clear">
+        </div>
+       </li>
+      </ul>
+    </div>
+   <br class="clear">
 <!--<div class="menu-wrapper" style="margin-top:10%;">
    <div class="menu-wrapper-2" style="padding-left:10%;">
      <h1 style="font-size:20px;padding-top:10px; color:blue;">ABOUT</h1>
@@ -63,7 +108,7 @@
 </div>
 </div>-->
 
-<div class="good-wrapper">
+<!--<div class="good-wrapper">
     <h1 class="fadein" style="font-weight: 200;font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;">BUSINESS</h1>
     <div class="good-wrapper-2">
         <ul class="delayFadein">
@@ -93,9 +138,9 @@
         <div class="clear">
         </div>
     </div>
-</div>
+</div>-->
 <div class="message-wrapper">
-    <h1 class="fadein"  id="href" style="font-weight: 200;font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;">RECRUIT</h1>
+    <h1 class="fadein"  id="href" style="font-weight: 200;font-family:'Lato','Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;">RECRUIT</h1>
     <div class="message-wrapper-2">
         <ul class="dilayFadein">
             <li>
@@ -206,8 +251,6 @@
         });
     });
 </script>
-
-
 <script>
     $(function () {
         $(window).scroll(function () {
@@ -221,16 +264,17 @@
                 if (scroll > position - windowHeight + 80) {
                     //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
                     //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
-                    $(".item").each(function (i) {
+                    $(".newtime").each(function (i) {
                         $(this).delay(200 * i).animate(
                             {
                                 opacity: 1
                             }
                         );
                         //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
+                    });
+                        //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
                         $(".header-right  a").css("color", "black");
                         $(".header-right  a").css("font-weight", "1000");
-                    });
                 } else {
                     //BUSINESSより前のスクロール量であれば白に戻すって感じです
                     $(".header-right a").css("color", "white");

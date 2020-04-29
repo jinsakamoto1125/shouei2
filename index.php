@@ -8,10 +8,11 @@
 </head>
 <body>
 <div class="top-wrapper-1">
-    <div class="header-left  fadeleft">
-        <h1>SHO-<span class="fadeleft">EI</span></h1>
+    <div class="header-left fadeleft" style="padding-top:1%;padding-left:5%;">
+      <img src="img/shouei.png" alt=""  style=" width:70px;height:70px;">
+        <h1 class="shouei"  style="position:absolute;  top:80%;">SHO-EI</h1>
     </div>
-    <div class="header-right fadeleft">
+    <div class="header-right fadeleft" >
         <a href="#href" style="display:inline-block;  color:white;  padding-right:30px;">採用情報</a>
         <a href="#href2" style="display:inline-block;  color:white;   padding-right:30px">お問い合わせ</a>
         <a href="confirm.php" style="display:inline-block;  color:white;   padding-right:30px">会社概要</a>
@@ -145,7 +146,7 @@
         <ul class="dilayFadein">
             <li>
                 <div class="item-2">
-                    <img src="img/IMG_E2774.JPG" alt="">
+                    <img src="img/IMG_2774.JPG" alt="">
                     <a href="red">
                         <p>中途採用</p>
                     </a>
@@ -153,7 +154,7 @@
             </li>
             <li>
                 <div class="item-2">
-                    <img src="img/IMG_2818.JPG" alt="">
+                    <img src="img/IMG_2819.JPG" alt="">
                     <a href="red">
                         <p>アルバイト・パート</p>
                     </a>

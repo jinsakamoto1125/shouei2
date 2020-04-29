@@ -4,15 +4,20 @@
     <meta charset="utf-8">
     <title>会社概要</title>
     <link rel="stylesheet" href="common/common.css">
-    <meta name="viewport" content="width=device-wide, initial-scale=1, shrink-to-fit=no">
   </head>
-  <body style="background:#f7fcfe">
+  <body>
    <header>
-    <div class="hed11">
-     <div class="header-left2"style="float:left; padding-top:10px; padding-left:60px">
-      <h1 style="color:white;">shouei</h1>
+     <div class="top-wrapper-1">
+         <div class="header-left fadeleft" style="padding-top:1%;padding-left:5%;">
+           <img src="img/shouei4.png" alt="" style=" width:70px;height:70px;">
+             <h1 class="shouei"  style="position:absolute;  top:80%;">SHO-EI</h1>
+         </div>
+         <div class="header-right fadeleft" >
+             <a href="#href" style="display:inline-block;  color:white;  padding-right:30px;">採用情報</a>
+             <a href="#href2" style="display:inline-block;  color:white;   padding-right:30px">お問い合わせ</a>
+             <a href="confirm.php" style="display:inline-block;  color:white;   padding-right:30px">会社概要</a>
+         </div>
      </div>
-    </div>
      <div class="lesson-wrapper-4" style="padding-left:10%;  margin:0 auto; width:60%;  padding-top:10%;">
       <h1 style="font-size:80px; float:left;  color:white;">COMPANY</h1>
       <h2 style=" float:left; padding-top:7%;  font-size:25px; padding-left:5%; color:white;">会社概要</h2>
@@ -97,6 +102,7 @@
 </div>-->
  <script src="common/js/jquery.js"></script>
  <script type="text/javascript">
+  $('.fadeleft').show(5000);
  </script>
 </body>
 </html>

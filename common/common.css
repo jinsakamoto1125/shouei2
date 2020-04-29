@@ -105,14 +105,16 @@ header{
 
 .top-wrapper-2 h1 {
     position: absolute;
-    top: 25%;
+    top: 40%;
     left: 60%;
+    color:white;
 }
 
 .top-wrapper-2 h2 {
     position: absolute;
-    top: 30%;
+    top: 45%;
     left: 62%;
+    color:white;
 }
 .new3{
    writing-mode: vertical-rl;
@@ -168,12 +170,10 @@ header{
     float: right;
     width: 25%;
     min-width: 345px;
-    text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
-    -webkit-background-clip: text;
     font-size: 17px;
     color: white;
     margin-right: 5%;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 .menu-wrapper h1 {
@@ -187,17 +187,12 @@ header{
 
 .header-left {
     float: left;
-    width: 30%;
 }
 
 .header-left h1 {
-    margin-left: 50px;
-    padding-bottom: 30px;
     color: transparent;
     background-color: black;
-    text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
-    -webkit-background-clip: text;
-    font-size: 50px;
+    font-size: 20px;
     color: white;
     -webkit-background-clip: text;
 }
@@ -205,24 +200,6 @@ header{
 .header-left span {
     color: yellow;
 }
-
-.top-wrapper-2 {
-    color: white;
-}
-
-.top-wrapper-2 h1 {
-    color: white;
-    text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px,
-    rgba(255, 255, 255, 0.2) 1px 3px 3px;
-}
-
-.top-wrapper-2 h2 {
-    color: white;
-    text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px,
-    rgba(255, 255, 255, 0.2) 1px 3px 3px;
-    -webkit-background-clip: text;
-}
-
 
 .item img {
     width: 100%;
@@ -312,7 +289,7 @@ header{
 }
 
 .contact-3:hover {
-    background-color: #59b9c6;
+    background-color:#38b48b;
     color: white;
 }
 

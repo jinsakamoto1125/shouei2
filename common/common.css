@@ -83,6 +83,10 @@ header{
     transform: translate(0px, -30px);
 }
 
+.newtime {
+    opacity: 0;
+}
+
 .item {
     opacity: 0;
 }

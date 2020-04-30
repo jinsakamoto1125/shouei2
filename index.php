@@ -32,7 +32,7 @@
      <div class="new3  fadein" style="font-size:60px; width:20%;">
        <p>Recent Situation</p>
      </div>
-          <ul class="dalayFadein"  style="width:70%;">
+          <ul class="delayFadein"  style="width:70%;">
             <li style="margin-bottom:10%;">
               <div class="newtime">
                 <p class="newtime2" style="float:left;font-size:20px;">2020.04.19</p>
@@ -143,7 +143,7 @@
 <div class="message-wrapper">
     <h1 class="fadein"  id="href" style="font-weight: 200;font-family:'Lato','Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;">RECRUIT</h1>
     <div class="message-wrapper-2">
-        <ul class="dilayFadein">
+        <ul class="recruitFadein">
             <li>
                 <div class="item-2">
                     <img src="img/IMG_2774.JPG" alt="">
@@ -252,37 +252,47 @@
         });
     });
 </script>
+
 <script>
-    $(function () {
-        $(window).scroll(function () {
-            //新しくずらして表示するためのクラスを追加して、
-            // その領域に入った時を条件にする
-            $('.delayFadein').each(function () {
-                var position = $(this).offset().top;
-                scroll = $(window). scrollTop();
-                windowHeight = $(window).height();
-                //指定した領域に入った時
-                if (scroll > position - windowHeight + 80) {
-                    //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
-                    //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
-                    $(".newtime").each(function (i) {
-                        $(this).delay(200 * i).animate(
-                            {
-                                opacity: 1
-                            }
-                        );
-                        //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
-                    });
+
+    //使いたい親クラスと対象のクラスを引数で渡す
+    delayFadeIn(".delayFadein",".newtime");
+    delayFadeIn(".recruitFadein",".item-2");
+
+    //処理自体をユーザ定義関数でまとめてしまって、
+    // 引数に設定されているクラス名で振る舞いの対象を変更する
+    function delayFadeIn(region,item) {
+        $(function () {
+            $(window).scroll(function () {
+                //新しくずらして表示するためのクラスを追加して、
+                // その領域に入った時を条件にする
+                $(region).each(function () {
+                    var position = $(this).offset().top;
+                    scroll = $(window). scrollTop();
+                    windowHeight = $(window).height();
+                    //指定した領域に入った時
+                    if (scroll > position - windowHeight + 80) {
+                        //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
+                        //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
+                        $(item).each(function (i) {
+                            $(this).delay(200 * i).animate(
+                                {
+                                    opacity: 1
+                                }
+                            );
+                        });
+
                         //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
                         $(".header-right  a").css("color", "black");
                         $(".header-right  a").css("font-weight", "1000");
-                } else {
-                    //BUSINESSより前のスクロール量であれば白に戻すって感じです
-                    $(".header-right a").css("color", "white");
-                }
+                    } else {
+                        //BUSINESSより前のスクロール量であれば白に戻すって感じです
+                        $(".header-right a").css("color", "white");
+                    }
+                });
             });
         });
-    });
+    }
 </script>
 
 <script>
@@ -295,31 +305,6 @@
     });
 </script>
 
-<script>
-    $(function () {
-        $(window).scroll(function () {
-            //新しくずらして表示するためのクラスを追加して、
-            // その領域に入った時を条件にする
-            $('.dilayFadein').each(function () {
-                var position = $(this).offset().top;
-                scroll = $(window).scrollTop();
-                windowHeight = $(window).height();
-                //指定した領域に入った時
-                if (scroll > position - windowHeight + 80) {
-                    //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
-                    //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
-                    $(".item-2").each(function (i) {
-                        $(this).delay(200 * i).animate(
-                            {
-                                opacity: 1
-                            }
-                        );
-                        //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
-                    });
-                }
-            });
-        });
-    });
-</script>
+
 </body>
 </html>

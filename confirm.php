@@ -6,25 +6,25 @@
     <link rel="stylesheet" href="common/common.css">
   </head>
   <body>
-   <header>
      <div class="top-wrapper-1">
-         <div class="header-left fadeleft" style="padding-top:1%;padding-left:5%;">
+         <div class="header-left" style="padding-left:5%;">
            <img src="img/shouei4.png" alt="" style=" width:70px;height:70px;">
              <h1 class="shouei"  style="position:absolute;  top:80%;">SHO-EI</h1>
          </div>
-         <div class="header-right fadeleft" >
-             <a href="#href" style="display:inline-block;  color:white;  padding-right:30px;">採用情報</a>
+         <div class="header-right">
+             <a href="index.php" style="display:inline-block;  color:white;   padding-right:30px">トップ</a>
              <a href="#href2" style="display:inline-block;  color:white;   padding-right:30px">お問い合わせ</a>
              <a href="confirm.php" style="display:inline-block;  color:white;   padding-right:30px">会社概要</a>
          </div>
      </div>
+     <div class="fade fadelight">
      <div class="lesson-wrapper-4" style="padding-left:10%;  margin:0 auto; width:60%;  padding-top:10%;">
       <h1 style="font-size:80px; float:left;  color:white;">COMPANY</h1>
       <h2 style=" float:left; padding-top:7%;  font-size:25px; padding-left:5%; color:white;">会社概要</h2>
      <div class="clear">
       </div>
-       </div>
-    </header>
+    </div>
+   </div>
     <div class="fed">
       <div class="fed2">
         <h1 class="fed3">会社概要</h1>
@@ -40,7 +40,7 @@
         <li>
           <p class="red">所在地</p>
           <div class="blue">
-            <a  href="#">東京都葛飾区鎌倉3-58-3</a>
+            <p>東京都葛飾区鎌倉3-58-3</p>
           </div>
           <br  class="clear">
         </li>
@@ -48,6 +48,27 @@
           <p class="red">売上高</p>
           <div class="blue">
             <p>??億</p>
+          </div>
+          <br  class="clear">
+        </li>
+        <li>
+          <p class="red">社員数</p>
+          <div class="blue">
+            <p>??名</p>
+          </div>
+          <br  class="clear">
+        </li>
+        <li>
+          <p class="red">社員数</p>
+          <div class="blue">
+            <p>??名</p>
+          </div>
+          <br  class="clear">
+        </li>
+        <li>
+          <p class="red">社員数</p>
+          <div class="blue">
+            <p>??名</p>
           </div>
           <br  class="clear">
         </li>
@@ -102,7 +123,31 @@
 </div>-->
  <script src="common/js/jquery.js"></script>
  <script type="text/javascript">
-  $('.fadeleft').show(5000);
+ $('.fadelight').addClass('active');
+ $(function () {
+     $(window).scroll(function () {
+         //新しくずらして表示するためのクラスを追加して、
+         // その領域に入った時を条件にする
+         $('.fed5').each(function () {
+             var position = $(this).offset().top;
+             scroll = $(window). scrollTop();
+             windowHeight = $(window).height();
+             //指定した領域に入った時
+             if (scroll > position - windowHeight + 400) {
+                 //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
+                 //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
+                  //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
+                 $(".header-right a").css("color", "black");
+                 $(".header-right a").css("font-weight", "1000");
+                 $(".header-left h1").css("color", "black");
+             } else {
+                 //BUSINESSより前のスクロール量であれば白に戻すって感じです
+                 $(".header-right a").css("color", "white");
+                 $(".header-left h1").css("color", "white");
+             }
+         });
+     });
+ });
  </script>
 </body>
 </html>

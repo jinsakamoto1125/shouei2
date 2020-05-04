@@ -8,154 +8,110 @@
 </head>
 <body>
 <div class="top-wrapper-1">
-    <div class="header-left fadeleft" style="padding-top:1%;padding-left:5%;">
-      <img src="img/shouei.png" alt=""  style=" width:70px;height:70px;">
-        <h1 class="shouei"  style="position:absolute;  top:80%;">SHO-EI</h1>
+    <div class="header-left">
+      <img src="img/shouei4.png" alt="">
+        <h1>SHO-EI</h1>
     </div>
-    <div class="header-right fadeleft" >
-        <a href="#href" style="display:inline-block;  color:white;  padding-right:30px;">採用情報</a>
-        <a href="#href2" style="display:inline-block;  color:white;   padding-right:30px">お問い合わせ</a>
-        <a href="confirm.php" style="display:inline-block;  color:white;   padding-right:30px">会社概要</a>
+    <div class="header-right">
+        <a href="#href">採用情報</a>
+        <a href="#href2">お問い合わせ</a>
+        <a href="confirm.php">会社概要</a>
     </div>
 </div>
 <br class="clear">
 <div class="top-wrapper fadenight">
     <div class="top-wrapper-2">
-        <h1 style="font-size:20px;">街を照らせ、</h1>
-        <h2 style="font-size:15px;">Illuminate the world</h2>
+        <h1>街を照らせ、</h1>
+        <h2>Illuminate the world</h2>
     </div>
 </div>
-<div class="fadein" style="margin-top:5%;">
+<div class="fadein NEWS">
   <h3 class="section-title">NEWS</h3>
   </div>
-   <div class="news" style="margin:5% auto; width:80%;display: flex;justify-content: space-between;">
-     <div class="new3  fadein" style="font-size:60px; width:20%;">
+   <div class="news">
+     <div class="new3 fadein">
        <p>Recent Situation</p>
      </div>
-          <ul class="delayFadein"  style="width:70%;">
-            <li style="margin-bottom:10%;">
+          <ul class="delayFadein">
+            <li  class="delayFadein2">
               <div class="newtime">
-                <p class="newtime2" style="float:left;font-size:20px;">2020.04.19</p>
-              <p style="float:left;padding-left:50px;font-size:18px;">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
+                <p class="newtime2">2020.04.19</p>
+              <p class="newtime3">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
               <br class="clear">
             </div>
            </li>
-           <li style="margin-bottom:10%;">
+           <li class="delayFadein2">
              <div class="newtime">
-               <p class="newtime2" style="float:left;font-size:20px;">2020.04.19</p>
-             <p style="float:left;padding-left:50px;font-size:18px;">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
+               <p class="newtime2">2020.04.19</p>
+             <p class="newtime3">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
              <br class="clear">
            </div>
           </li>
-          <li style="margin-bottom:10%;">
+          <li class="delayFadein2">
             <div class="newtime">
-              <p class="newtime2" style="float:left;font-size:20px;">2020.04.19</p>
-            <p style="float:left;padding-left:50px;font-size:18px;">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
+              <p class="newtime2">2020.04.19</p>
+            <p class="newtime3">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
             <br class="clear">
           </div>
          </li>
-         <li style="margin-bottom:10%;">
+         <li class="delayFadein2">
            <div class="newtime">
-             <p class="newtime2" style="float:left;font-size:20px;">2020.04.19</p>
-           <p style="float:left;padding-left:50px;font-size:18px;">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
+             <p class="newtime2">2020.04.19</p>
+           <p class="newtime3">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
            <br class="clear">
          </div>
         </li>
-        <li style="margin-bottom:10%;">
+        <li class="delayFadein2">
           <div class="newtime">
-            <p class="newtime2" style="float:left;font-size:20px;">2020.04.19</p>
-          <p style="float:left;padding-left:50px;font-size:18px;">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
+            <p class="newtime2">2020.04.19</p>
+          <p  id="href" class="newtime3">「第72回日本産婦人科学会」現地開催中止のお知らせ</p>
           <br class="clear">
         </div>
        </li>
       </ul>
     </div>
    <br class="clear">
-<!--<div class="menu-wrapper" style="margin-top:10%;">
-   <div class="menu-wrapper-2" style="padding-left:10%;">
-     <h1 style="font-size:20px;padding-top:10px; color:blue;">ABOUT</h1>
-     <h2 style="font-size:40px; padding-left:20px;">SHO-EIとは？</h2>
-   </div>
-   <div class="clear">
-    </div>
-   <div class="menu-wrapper-3" style="margin: 0 auto;  width:80%;">
-     <p style="font-size:50px; letter-spacing:4px; padding-top:6%;">お客様の安心を当たり前に</p>
-     <p style="font-size:50px; letter-spacing:4px; padding-top:10px;">世の中を私たちが明るく</p>
-     <p style="font-size:50px; letter-spacing:4px; padding-top:10px;">これからも皆様の電気をお守りしていきます</p>
-   </div>
- </div>-->
-<!--<div id="about" style="margin-top:10%;">
-    <div class="pcWrap fadein">
-        <div class="box"></div>
-        <div class="wrap">
-            <div class="left">
-                <div class="leftWrap">
-                    <h3>SHO-EIとは？</h3>
-                    <h4>Our Beliefs</h4>
-                </div>
-            </div>
-            <div class="center">
-                <div class="centerWrap">
-                    <h3>お客様の</h3>
-                    <h3>安心をあたりまえに.</h3>
-                    <p>It's a company that delivers electricity </p>
-                    <p>that is so bright that it is said to be ridiculous , stupid</p>
-                </div>
-            </div>
-            <div class="right"></div>
-            <br class="clear">
-        </div>
-    </div>
-</div>
-</div>-->
-
-<!--<div class="good-wrapper">
-    <h1 class="fadein" style="font-weight: 200;font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;">BUSINESS</h1>
-    <div class="good-wrapper-2">
-        <ul class="delayFadein">
-            <li>
-                <div class="item" style="background:black;">
-                    <a href="red">
-                        <img src="img/IMG2.png" alt="" style="height:450px;">
-                        <p>保守</p>
-                    </a>
-                </div>
-                <div class="item" style="background:black;">
-                    <a href="red">
-                        <img src="img/IMG_2732.JPG" alt="" style="height:225px;">
-                        <p>保全</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="item" style="background: black;">
-                    <a href="red">
-                        <img src="img/hosyu.jpg" alt="" class="good" style="height:225px;">
-                        <p>電気点検</p>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <div class="clear">
-        </div>
-    </div>
-</div>-->
 <div class="message-wrapper">
-    <h1 class="fadein"  id="href" style="font-weight: 200;font-family:'Lato','Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;">RECRUIT</h1>
-    <div class="message-wrapper-2">
+<div class="message-wrapper-2 pcWrap">
+      <h1 class="fadein">RECRUIT</h1>
         <ul class="recruitFadein">
             <li>
                 <div class="item-2">
-                    <img src="img/IMG_2774.JPG" alt="">
-                    <a href="red">
+                    <a href="menu.php">
+                      <img src="img/IMG_2774.JPG" alt="">
                         <p>中途採用</p>
                     </a>
                 </div>
             </li>
             <li>
                 <div class="item-2">
-                    <img src="img/IMG_2819.JPG" alt="">
-                    <a href="red">
+                    <a href="less.php">
+                      <img src="img/IMG_2819.JPG" alt="">
+                        <p>アルバイト・パート</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+   <div class="clear">
+   </div>
+</div>
+<div class="message-wrapper spWrap">
+<div class="message-wrapper-2">
+      <h1 class="fadein">RECRUIT</h1>
+        <ul class="recruitFadein">
+            <li>
+                <div class="item-2">
+                    <a href="menu.php">
+                      <img src="img/IMG_2774.JPG" alt="">
+                        <p>中途採用</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="item-2">
+                    <a href="less.php">
+                      <img src="img/IMG_2819.JPG" alt="">
                         <p>アルバイト・パート</p>
                     </a>
                 </div>
@@ -163,12 +119,16 @@
         </ul>
     </div>
 </div>
-<div class="clear">
+<div class="COMPANY fadein">
+    <a href="menu.php">
+      <img src="img/IMG_2820.JPG" alt="">
+      <p>会社概要</p>
+    </a>
 </div>
 <div class="contact" id="href2">
     <div class="contact-2  fadein">
-        <h2 style="font-weight: 100;font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;">ENTRY</h2>
-        <p style="padding-top:20px;">昭栄電気産業に関する募集要項とエントリーフォームはこちら。</p>
+        <h2>ENTRY</h2>
+        <p>昭栄電気産業に関する募集要項とエントリーフォームはこちら。</p>
         <div class="contact-3">応募する</div>
         <div class="clear">
         </div>
@@ -237,7 +197,6 @@
 <script src="common/js/jquery.js"></script>
 <script type="text/javascript">
     //5秒かけて表示は遅すぎません
-    $('.fadeleft').show(5000);
    $('.fadenight').addClass('active');
     $(function () {
         $(window).scroll(function () {
@@ -245,18 +204,16 @@
                 var position = $(this).offset().top;
                 var scroll = $(window).scrollTop();
                 var windowHeight = $(window).height();
-                if (scroll > position - windowHeight + 200) {
+                if (scroll > position - windowHeight + 400) {
                     $(this).addClass('active');
                 }
             });
         });
     });
 </script>
-
 <script>
 
     //使いたい親クラスと対象のクラスを引数で渡す
-    delayFadeIn(".delayFadein",".newtime");
     delayFadeIn(".recruitFadein",".item-2");
 
     //処理自体をユーザ定義関数でまとめてしまって、
@@ -271,7 +228,7 @@
                     scroll = $(window). scrollTop();
                     windowHeight = $(window).height();
                     //指定した領域に入った時
-                    if (scroll > position - windowHeight + 80) {
+                    if (scroll > position - windowHeight + 400) {
                         //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
                         //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
                         $(item).each(function (i) {
@@ -280,21 +237,51 @@
                                     opacity: 1
                                 }
                             );
-                        });
+                         });
+                         //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
 
-                        //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
-                        $(".header-right  a").css("color", "black");
-                        $(".header-right  a").css("font-weight", "1000");
-                    } else {
-                        //BUSINESSより前のスクロール量であれば白に戻すって感じです
-                        $(".header-right a").css("color", "white");
                     }
                 });
             });
         });
     }
 </script>
-
+<script>
+    delayFadeIn(".delayFadein",".newtime");
+    function delayFadeIn(region,item) {
+    $(function () {
+        $(window).scroll(function () {
+            //新しくずらして表示するためのクラスを追加して、
+            // その領域に入った時を条件にする
+            $(region).each(function () {
+                var position = $(this).offset().top;
+                scroll = $(window). scrollTop();
+                windowHeight = $(window).height();
+                //指定した領域に入った時
+                if (scroll > position - windowHeight + 400) {
+                    //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
+                    //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
+                    $(item).each(function (i) {
+                        $(this).delay(200 * i).animate(
+                            {
+                                opacity: 1
+                            }
+                        );
+                     });
+                     //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
+                    $(".header-right a").css("color", "black");
+                    $(".header-right a").css("font-weight", "1000");
+                    $(".header-left h1").css("color", "black");
+                } else {
+                    //BUSINESSより前のスクロール量であれば白に戻すって感じです
+                    $(".header-right a").css("color", "white");
+                    $(".header-left h1").css("color", "white");
+                }
+            });
+        });
+    });
+}
+</script>
 <script>
     $('.header-right a').click(function () {
         var id = $(this).attr('href');
@@ -304,7 +291,7 @@
         }, 500);
     });
 </script>
-
-
+<script>
+</script>
 </body>
 </html>

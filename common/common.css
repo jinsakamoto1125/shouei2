@@ -27,29 +27,79 @@ li{
 body {
    font-family: serif;
 }
+
 @charset "utf-8";
 
 @media screen and (max-width:480px) {
+
   .pcWrap{
     display:none;
   }
+
+  .pc1{
+    display:none;
+    }
+    .pc2{
+      display:none;
+    }
+   .pc3{
+      display:none;
+    }
+
   .top{
     width:100%;
-    height:400px;
-    background-image: url(../img/IMG_2774.JPG);
+    height:250px;
+    background-image: url(../img/sajyo.jpg);
     background-size: cover;
   }
 
   .top2{
     width:100%;
-    height:400px;
-    background-image: url(../img/IMG_2819.JPG);
+    height:200px;
+    background-image: url(../img/img2.jpg);
     background-size: cover;
   }
 
+  .lesson-wrapper-4 {
+    padding-left: 10%;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 25%;
+  }
+
+  .lesson-wrapper-4 h1{
+      font-size: 50px;
+      color: white;
+    }
+
+  .lesson-wrapper-4 h2{
+    font-size: 15px;
+    color: white;
+    padding-left:60%;
+  }
+
+  .part{
+   font-size:10px;
+  }
+
+  .company{
+    padding-bottom:5%;
+    padding-top:5%;
+  }
+
+  .company1{
+    padding-bottom:5%;
+    }
+
+  .company6{
+    padding-bottom:5%;
+  }
+
   .new3{
-     writing-mode: vertical-rl;
-     float:left;
+    writing-mode: vertical-rl;
+    float:left;
+    font-size:50px;
+    width:20%;
   }
 
   .new5{
@@ -61,44 +111,33 @@ body {
   }
 
   .fed{
-    width:960px;
-    padding: 70px 0;
-    margin: 0 auto;
-    overflow: hidden;
+    width:100%;
+    margin-top:5%;
   }
 
   .fed2{
-    float:left;
     margin-top:32px;
+    border-bottom: 1px solid #524e4d;
+    width:120px;
+    margin: 0  auto;
   }
 
   .fed3{
-    writing-mode: vertical-rl;
     letter-spacing: 5px;
     font-size:24px;
   }
 
   .fed5{
-    width: 782px;
-    float: right;
-  }
-
-  .fed0{
-    width: 850px;
-    float: right;
+    width: 100%;
   }
 
   .fed5 p{
     letter-spacing: 5px;
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .fed0 p{
     letter-spacing: 5px;
-  }
-
-  .blue p{
-    font-size:17px;
   }
 
   .job{
@@ -116,32 +155,47 @@ body {
   }
 
   .red{
-    width: 220px;
     float: left;
-    font-size: 14px;
+    font-size: 10px;
     padding-left: 20px;
+    width:120px;
   }
 
   .red2{
     font-style: normal;
   }
 
-  .bike{
-    padding-left: 3%;
-  }
-
   .blue{
     float: left;
+    font-size:10px;
   }
 
   .blue2{
-   font-style: normal;
+    font-style: normal;
+  }
+
+  .bike{
+    padding-left: 3%;
+    font-size:10px;
+  }
+
+  .bike1{
+    padding-top: 5%;
+    padding-bottom:5%;
+  }
+
+  .bike2{
+     padding-bottom:5%;
+  }
+
+  .bike3{
+    padding-top: 3%;
   }
 
   .fade{
     width:100%;
-    height:400px;
-    background-image: url(../img/IMG_2820.JPG);
+    height:220px;
+    background-image: url(../img/img3.jpg);
     background-size: cover;
   }
 
@@ -160,13 +214,13 @@ body {
   .COMPANY{
     position:relative;
     background:black;
-    height:400px;
-    margin-top:15%;
+    height:150px;
+    margin-top:25%;
   }
 
   .COMPANY img{
     width:100%;
-    height:400px;
+    height:150px;
   }
 
   .COMPANY img:hover{
@@ -184,28 +238,45 @@ body {
   .top-wrapper-2 h1 {
     position: absolute;
     top: 40%;
-    left: 60%;
-    color:white;
-    font-size:20px;
-  }
-
-  .top-wrapper-2 h2 {
-    position: absolute;
-    top: 45%;
-    left: 62%;
+    left: 18%;
     color:white;
     font-size:15px;
   }
 
+  .top-wrapper-2 h2 {
+    position: absolute;
+    top: 44%;
+    left: 18%;
+    color:white;
+    font-size:10px;
+  }
+
   .top-wrapper {
       width: 100%;
-      height:800px;
-      background-image: url(../img/IMG_2871.JPG);
+      height:700px;
+      background-image: url(../img/singaito2.JPG);
       background-size:cover;
   }
 
-  .header-left span {
-      display: none;
+  .header-left {
+    float: left;
+    padding-top:1%;
+    padding-left:1%
+  }
+
+  .header-left img{
+    width:50px;
+    height:50px;
+  }
+
+  .header-left h1 {
+    color: transparent;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    -webkit-background-clip: text;
+    position:absolute;
+    top:70%;
   }
 
   .fadenight {
@@ -237,15 +308,13 @@ body {
 
   .newtime2{
     float:left;
-
-
-    font-size:20px;
+    font-size:17px;
   }
 
   .newtime3{
     float:left;
-    padding-left:50px;
-    font-size:18px;
+    padding-left:30px;
+    font-size:12px;
   }
 
   .section-title{
@@ -272,13 +341,6 @@ body {
     justify-content:space-between;
   }
 
-  .new3{
-     writing-mode: vertical-rl;
-     float:left;
-     font-size:60px;
-     width:20%;
-  }
-
   .new5{
     float:right;
   }
@@ -291,37 +353,6 @@ body {
     margin-bottom:10%;
   }
 
-  .fed{
-    width:960px;
-    padding: 70px 0;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .fed3{
-    writing-mode: vertical-rl;
-    letter-spacing: 5px;
-    font-size:24px;
-  }
-
-  .fed5{
-    width: 782px;
-    float: right;
-  }
-
-  .fed0{
-    width: 850px;
-    float: right;
-  }
-
-  .fed5 p{
-    letter-spacing: 5px;
-  }
-
-  .fed0 p{
-    letter-spacing: 5px;
-  }
-
   .job{
     padding: 20px 0;
     overflow: hidden;
@@ -330,49 +361,20 @@ body {
     background:#f8fbf8;
   }
 
-  .fed5 li{
-    padding: 32px 0;
-    overflow: hidden;
-    border-bottom: 1px solid #aabcc2;
-  }
-
-  .red{
-    width: 220px;
-    float: left;
-    font-size: 14px;
-    padding-left: 20px;
-  }
-
-  .red2{
-    font-style: normal;
-  }
-
-  .bike{
-    padding-left: 3%;
-  }
-
-  .blue{
-    float: left;
-  }
-
-  .blue2{
-   font-style: normal;
-  }
 
   .header-right {
       float: right;
-      width: 25%;
-      min-width: 345px;
-      font-size: 17px;
       color: white;
-      margin-right: 5%;
-      margin-top: 3%;
+      margin-top: 2%;
+      font-size: 12px;
+      margin-right:5%;
   }
 
   .header-right a{
     display:inline-block;
     color:white;
-    padding-right:30px;
+    padding-right:10px;
+    padding-top:3%;
   }
 
   .message-wrapper {
@@ -404,31 +406,6 @@ body {
       float: left;
   }
 
-  .header-left {
-      float: left;
-      padding-top:1%;
-      padding-left:5%
-  }
-
-  .header-left img{
-    width:70px;
-    height:70px;
-  }
-
-  .header-left h1 {
-      color: transparent;
-      background-color: black;
-      font-size: 20px;
-      color: white;
-      -webkit-background-clip: text;
-      position:absolute;
-      top:80%;
-  }
-
-  .header-left span {
-      color: yellow;
-  }
-
   .good-wrapper {
       margin-top: 10%;
   }
@@ -448,11 +425,22 @@ body {
 
   .item-2 {
       position: relative;
-      width: 50%;
-      height: 340px;
+      width: 100%;
+      height: 150px;
       background: black;
       color: white;
       opacity: 0;
+  }
+
+  .item-2 img:hover {
+    opacity: 0.3;
+    transition: 0.2s;
+  }
+
+  .item-2 img {
+    width: 100%;
+    height: 150px;
+    border: 1px solid white;
   }
 
   .item-2 p {
@@ -506,26 +494,6 @@ body {
       color: white;
   }
 
-  .item img:hover {
-      opacity: 0.3;
-      transition: 0.2s;
-  }
-
-  .item img {
-      border: 1px solid white;
-  }
-
-  .item-2 img:hover {
-      opacity: 0.3;
-      transition: 0.2s;
-  }
-
-  .item-2 img {
-      width: 100%;
-      height: 340px;
-      border: 1px solid white;
-  }
-
   .contact-3 {
       border: 1px solid black;
       width: 200px;
@@ -538,27 +506,21 @@ body {
   }
 
   .footer-2 {
-      padding-top: 150px;
-      margin-bottom: 300px;
-      padding-left: 40px;
-      margin: 0 auto;
-      width: 80%;
+      margin: 15% auto;
+      width: 90%;
       font-size: 13px;
       font-family: "MS 明朝";
   }
 
   .footer-3 {
       float: left;
-      width: 16.6%;
+      width: 25%;
       font-family: serif;
   }
 
   .footer-3 p {
       font-weight: bold;
-  }
-
-  .footer-2 {
-      padding-left: 40px;
+      padding-bottom: 7px;
   }
 
   .footer-3 span {
@@ -569,14 +531,10 @@ body {
       padding-left: 120px;
   }
 
-  .footer-3 p {
-      padding-bottom: 7px;
-  }
-
   .footer-4 p {
       font-size: 10px;
-      padding-left: 150px;
-      padding-bottom: 40px;
+      padding-left:5%;
+      padding-bottom:5%;
   }
 
   .good-wrapper {
@@ -585,26 +543,74 @@ body {
 }
 
 @media screen and (min-width:481px) and ( max-width:767px) {
-  .spWrap{
-     display:none;
+  .pcWrap{
+    display:none;
   }
+
+  .pc1{
+    display:none;
+    }
+    .pc2{
+      display:none;
+    }
+   .pc3{
+      display:none;
+    }
+
   .top{
     width:100%;
-    height:400px;
-    background-image: url(../img/IMG_2774.JPG);
+    height:270px;
+    background-image: url(../img/sajyo.jpg);
     background-size: cover;
   }
 
   .top2{
     width:100%;
-    height:400px;
-    background-image: url(../img/IMG_2819.JPG);
+    height:270px;
+    background-image: url(../img/img2.jpg);
     background-size: cover;
   }
 
+  .lesson-wrapper-4 {
+    padding-left: 10%;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 23%;
+  }
+
+  .lesson-wrapper-4 h1{
+      font-size: 60px;
+      color: white;
+    }
+
+  .lesson-wrapper-4 h2{
+    font-size: 20px;
+    color: white;
+    padding-left:60%;
+  }
+
+  .part{
+   font-size:10px;
+  }
+
+  .company{
+    padding-bottom:5%;
+    padding-top:5%;
+  }
+
+  .company1{
+    padding-bottom:5%;
+    }
+
+  .company6{
+    padding-bottom:5%;
+  }
+
   .new3{
-     writing-mode: vertical-rl;
-     float:left;
+    writing-mode: vertical-rl;
+    float:left;
+    font-size:50px;
+    width:20%;
   }
 
   .new5{
@@ -616,44 +622,33 @@ body {
   }
 
   .fed{
-    width:960px;
-    padding: 70px 0;
-    margin: 0 auto;
-    overflow: hidden;
+    width:100%;
+    margin-top:5%;
   }
 
   .fed2{
-    float:left;
     margin-top:32px;
+    border-bottom: 1px solid #524e4d;
+    width:120px;
+    margin: 0  auto;
   }
 
   .fed3{
-    writing-mode: vertical-rl;
     letter-spacing: 5px;
     font-size:24px;
   }
 
   .fed5{
-    width: 782px;
-    float: right;
-  }
-
-  .fed0{
-    width: 850px;
-    float: right;
+    width: 100%;
   }
 
   .fed5 p{
     letter-spacing: 5px;
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .fed0 p{
     letter-spacing: 5px;
-  }
-
-  .blue p{
-    font-size:17px;
   }
 
   .job{
@@ -671,32 +666,47 @@ body {
   }
 
   .red{
-    width: 220px;
     float: left;
-    font-size: 14px;
+    font-size: 10px;
     padding-left: 20px;
+    width:120px;
   }
 
   .red2{
     font-style: normal;
   }
 
-  .bike{
-    padding-left: 3%;
-  }
-
   .blue{
     float: left;
+    font-size:10px;
   }
 
   .blue2{
-   font-style: normal;
+    font-style: normal;
+  }
+
+  .bike{
+    padding-left: 3%;
+    font-size:10px;
+  }
+
+  .bike1{
+    padding-top: 5%;
+    padding-bottom:5%;
+  }
+
+  .bike2{
+     padding-bottom:5%;
+  }
+
+  .bike3{
+    padding-top: 3%;
   }
 
   .fade{
     width:100%;
-    height:400px;
-    background-image: url(../img/IMG_2820.JPG);
+    height:270px;
+    background-image: url(../img/img3.jpg);
     background-size: cover;
   }
 
@@ -715,13 +725,13 @@ body {
   .COMPANY{
     position:relative;
     background:black;
-    height:400px;
-    margin-top:15%;
+    height:150px;
+    margin-top:25%;
   }
 
   .COMPANY img{
     width:100%;
-    height:400px;
+    height:150px;
   }
 
   .COMPANY img:hover{
@@ -739,28 +749,45 @@ body {
   .top-wrapper-2 h1 {
     position: absolute;
     top: 40%;
-    left: 60%;
-    color:white;
-    font-size:20px;
-  }
-
-  .top-wrapper-2 h2 {
-    position: absolute;
-    top: 45%;
-    left: 62%;
+    left: 18%;
     color:white;
     font-size:15px;
   }
 
+  .top-wrapper-2 h2 {
+    position: absolute;
+    top: 44%;
+    left: 18%;
+    color:white;
+    font-size:10px;
+  }
+
   .top-wrapper {
       width: 100%;
-      height:800px;
-      background-image: url(../img/IMG_2871.JPG);
+      height:700px;
+      background-image: url(../img/singaito2.JPG);
       background-size:cover;
   }
 
-  .header-left span {
-      display: none;
+  .header-left {
+    float: left;
+    padding-top:1%;
+    padding-left:1%
+  }
+
+  .header-left img{
+    width:50px;
+    height:50px;
+  }
+
+  .header-left h1 {
+    color: transparent;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    -webkit-background-clip: text;
+    position:absolute;
+    top:70%;
   }
 
   .fadenight {
@@ -792,15 +819,13 @@ body {
 
   .newtime2{
     float:left;
-
-
-    font-size:20px;
+    font-size:17px;
   }
 
   .newtime3{
     float:left;
-    padding-left:50px;
-    font-size:18px;
+    padding-left:30px;
+    font-size:12px;
   }
 
   .section-title{
@@ -827,13 +852,6 @@ body {
     justify-content:space-between;
   }
 
-  .new3{
-     writing-mode: vertical-rl;
-     float:left;
-     font-size:60px;
-     width:20%;
-  }
-
   .new5{
     float:right;
   }
@@ -846,37 +864,6 @@ body {
     margin-bottom:10%;
   }
 
-  .fed{
-    width:960px;
-    padding: 70px 0;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .fed3{
-    writing-mode: vertical-rl;
-    letter-spacing: 5px;
-    font-size:24px;
-  }
-
-  .fed5{
-    width: 782px;
-    float: right;
-  }
-
-  .fed0{
-    width: 850px;
-    float: right;
-  }
-
-  .fed5 p{
-    letter-spacing: 5px;
-  }
-
-  .fed0 p{
-    letter-spacing: 5px;
-  }
-
   .job{
     padding: 20px 0;
     overflow: hidden;
@@ -885,49 +872,20 @@ body {
     background:#f8fbf8;
   }
 
-  .fed5 li{
-    padding: 32px 0;
-    overflow: hidden;
-    border-bottom: 1px solid #aabcc2;
-  }
-
-  .red{
-    width: 220px;
-    float: left;
-    font-size: 14px;
-    padding-left: 20px;
-  }
-
-  .red2{
-    font-style: normal;
-  }
-
-  .bike{
-    padding-left: 3%;
-  }
-
-  .blue{
-    float: left;
-  }
-
-  .blue2{
-   font-style: normal;
-  }
 
   .header-right {
       float: right;
-      width: 25%;
-      min-width: 345px;
-      font-size: 17px;
       color: white;
-      margin-right: 5%;
-      margin-top: 3%;
+      margin-top: 2%;
+      font-size: 12px;
+      margin-right:5%;
   }
 
   .header-right a{
     display:inline-block;
     color:white;
-    padding-right:30px;
+    padding-right:10px;
+    padding-top:3%;
   }
 
   .message-wrapper {
@@ -959,55 +917,6 @@ body {
       float: left;
   }
 
-  .header-left {
-      float: left;
-      padding-top:1%;
-      padding-left:5%
-  }
-
-  .header-left img{
-    width:70px;
-    height:70px;
-  }
-
-  .header-left h1 {
-      color: transparent;
-      background-color: black;
-      font-size: 20px;
-      color: white;
-      -webkit-background-clip: text;
-      position:absolute;
-      top:80%;
-  }
-
-  .header-left span {
-      color: yellow;
-  }
-
-  .item img {
-      width: 100%;
-      vertical-align: top;
-  }
-
-  .item {
-      width: 50%;
-      float: left;
-      position: relative;
-      opacity: 0;
-  }
-
-  .item p {
-      width: 100%;
-      font-size: 23px;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      letter-spacing: 1.5px;
-      transform: translateY(-50%);
-      text-align: center;
-      color: white;
-  }
-
   .good-wrapper {
       margin-top: 10%;
   }
@@ -1026,13 +935,23 @@ body {
   }
 
   .item-2 {
-      float: left;
       position: relative;
-      width: 50%;
-      height: 340px;
+      width: 100%;
+      height: 150px;
       background: black;
       color: white;
       opacity: 0;
+  }
+
+  .item-2 img:hover {
+    opacity: 0.3;
+    transition: 0.2s;
+  }
+
+  .item-2 img {
+    width: 100%;
+    height: 150px;
+    border: 1px solid white;
   }
 
   .item-2 p {
@@ -1086,26 +1005,6 @@ body {
       color: white;
   }
 
-  .item img:hover {
-      opacity: 0.3;
-      transition: 0.2s;
-  }
-
-  .item img {
-      border: 1px solid white;
-  }
-
-  .item-2 img:hover {
-      opacity: 0.3;
-      transition: 0.2s;
-  }
-
-  .item-2 img {
-      width: 100%;
-      height: 340px;
-      border: 1px solid white;
-  }
-
   .contact-3 {
       border: 1px solid black;
       width: 200px;
@@ -1118,27 +1017,21 @@ body {
   }
 
   .footer-2 {
-      padding-top: 150px;
-      margin-bottom: 300px;
-      padding-left: 40px;
-      margin: 0 auto;
-      width: 80%;
+      margin: 15% auto;
+      width: 90%;
       font-size: 13px;
       font-family: "MS 明朝";
   }
 
   .footer-3 {
       float: left;
-      width: 16.6%;
+      width: 25%;
       font-family: serif;
   }
 
   .footer-3 p {
       font-weight: bold;
-  }
-
-  .footer-2 {
-      padding-left: 40px;
+      padding-bottom: 7px;
   }
 
   .footer-3 span {
@@ -1149,14 +1042,10 @@ body {
       padding-left: 120px;
   }
 
-  .footer-3 p {
-      padding-bottom: 7px;
-  }
-
   .footer-4 p {
       font-size: 10px;
-      padding-left: 150px;
-      padding-bottom: 40px;
+      padding-left:5%;
+      padding-bottom:5%;
   }
 
   .good-wrapper {
@@ -1166,8 +1055,21 @@ body {
 
 @media screen and (min-width:768px) and ( max-width:1023px) {
   .spWrap{
-     display:none;
-  }
+      display:none;
+    }
+
+  .pc2{
+    display:none;
+    }
+
+  .pc3{
+    display:none;
+    }
+
+  .pc4{
+    display:none;
+    }
+
   .top{
     width:100%;
     height:400px;
@@ -1177,7 +1079,7 @@ body {
 
   .top2{
     width:100%;
-    height:400px;
+    height:300px;
     background-image: url(../img/IMG_2819.JPG);
     background-size: cover;
   }
@@ -1196,7 +1098,7 @@ body {
   }
 
   .fed{
-    width:960px;
+    width:100%;
     padding: 70px 0;
     margin: 0 auto;
     overflow: hidden;
@@ -1204,6 +1106,7 @@ body {
 
   .fed2{
     float:left;
+    margin-left: 8%;
     margin-top:32px;
   }
 
@@ -1214,12 +1117,7 @@ body {
   }
 
   .fed5{
-    width: 782px;
-    float: right;
-  }
-
-  .fed0{
-    width: 850px;
+    width:600px;
     float: right;
   }
 
@@ -1251,7 +1149,7 @@ body {
   }
 
   .red{
-    width: 220px;
+    width: 200px;
     float: left;
     font-size: 14px;
     padding-left: 20px;
@@ -1265,6 +1163,15 @@ body {
     padding-left: 3%;
   }
 
+  .bike1{
+    padding-bottom:5%;
+    padding-top:5%;
+  }
+
+  .bike2{
+    padding-bottom:5%;
+  }
+
   .blue{
     float: left;
   }
@@ -1275,7 +1182,7 @@ body {
 
   .fade{
     width:100%;
-    height:400px;
+    height:380px;
     background-image: url(../img/IMG_2820.JPG);
     background-size: cover;
   }
@@ -1295,18 +1202,31 @@ body {
   .COMPANY{
     position:relative;
     background:black;
-    height:400px;
+    height:300px;
     margin-top:15%;
   }
 
   .COMPANY img{
     width:100%;
-    height:400px;
+    height:300px;
   }
 
   .COMPANY img:hover{
     opacity: 0.3;
     transition: 0.2s;
+  }
+
+  .company{
+    padding-bottom:5%;
+    padding-top:5%;
+  }
+
+  .company1{
+    padding-bottom:5%;
+    }
+
+  .company6{
+    padding-bottom:5%;
   }
 
   .top-wrapper-1 {
@@ -1335,7 +1255,7 @@ body {
   .top-wrapper {
       width: 100%;
       height:800px;
-      background-image: url(../img/IMG_2871.JPG);
+      background-image: url(../img/singaito.JPG);
       background-size:cover;
   }
 
@@ -1426,27 +1346,10 @@ body {
     margin-bottom:10%;
   }
 
-  .fed{
-    width:960px;
-    padding: 70px 0;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
   .fed3{
     writing-mode: vertical-rl;
     letter-spacing: 5px;
     font-size:24px;
-  }
-
-  .fed5{
-    width: 782px;
-    float: right;
-  }
-
-  .fed0{
-    width: 850px;
-    float: right;
   }
 
   .fed5 p{
@@ -1469,29 +1372,6 @@ body {
     padding: 32px 0;
     overflow: hidden;
     border-bottom: 1px solid #aabcc2;
-  }
-
-  .red{
-    width: 220px;
-    float: left;
-    font-size: 14px;
-    padding-left: 20px;
-  }
-
-  .red2{
-    font-style: normal;
-  }
-
-  .bike{
-    padding-left: 3%;
-  }
-
-  .blue{
-    float: left;
-  }
-
-  .blue2{
-   font-style: normal;
   }
 
   .header-right {
@@ -1629,7 +1509,7 @@ body {
 
   .contact {
       text-align: center;
-     margin-top: 15%;
+      margin-top: 15%;
   }
 
   .contact-2 h2 {
@@ -1698,27 +1578,20 @@ body {
   }
 
   .footer-2 {
-      padding-top: 150px;
-      margin-bottom: 300px;
-      padding-left: 40px;
-      margin: 0 auto;
-      width: 80%;
+      margin: 12% auto 0 auto;
+      width: 40%;
       font-size: 13px;
       font-family: "MS 明朝";
   }
 
   .footer-3 {
       float: left;
-      width: 16.6%;
+      width: 25%;
       font-family: serif;
   }
 
   .footer-3 p {
       font-weight: bold;
-  }
-
-  .footer-2 {
-      padding-left: 40px;
   }
 
   .footer-3 span {
@@ -1729,24 +1602,54 @@ body {
       padding-left: 120px;
   }
 
-  .footer-3 p {
-      padding-bottom: 7px;
-  }
-
   .footer-4 p {
       font-size: 10px;
-      padding-left: 150px;
-      padding-bottom: 40px;
+      padding-top: 5%;
+      padding-bottom:5%;
+      padding-left: 5%;
   }
 
   .good-wrapper {
       text-align: center;
   }
+
+  .lesson-wrapper-4{
+     margin:0 auto;
+     width:60%;
+  }
+
+  .lesson-wrapper-4 h1{
+    font-size:80px;
+    float:left;
+    color:white;
+    padding-top:25%;
+  }
+
+  .lesson-wrapper-4 h2{
+    float:left;
+    padding-top:7%;
+    font-size:25px;
+    padding-left:5%;
+    color:white;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+
 .spWrap{
     display:none;
+  }
+
+.pc2{
+  display:none;
+  }
+
+.pc3{
+  display:none;
+  }
+
+.pc4{
+  display:none;
   }
 
 .top{
@@ -1846,6 +1749,17 @@ body {
   padding-left: 3%;
 }
 
+.bike1{
+  padding-bottom:5%;
+  padding-top:5%;
+}
+
+.bike2{
+  padding-bottom:5%;
+}
+
+.bike0
+
 .blue{
   float: left;
 }
@@ -1856,7 +1770,7 @@ body {
 
 .fade{
   width:100%;
-  height:400px;
+  height:380px;
   background-image: url(../img/IMG_2820.JPG);
   background-size: cover;
 }
@@ -1890,6 +1804,19 @@ body {
   transition: 0.2s;
 }
 
+.company{
+  padding-bottom:5%;
+  padding-top:5%;
+}
+
+.company1{
+  padding-bottom:5%;
+  }
+
+.company6{
+  padding-bottom:5%;
+}
+
 .top-wrapper-1 {
     position: fixed;
     top: 0;
@@ -1916,7 +1843,7 @@ body {
 .top-wrapper {
     width: 100%;
     height:800px;
-    background-image: url(../img/IMG_2871.JPG);
+    background-image: url(../img/singaito.JPG);
     background-size:cover;
 }
 
@@ -2067,6 +1994,10 @@ body {
   padding-left: 3%;
 }
 
+.bike0{
+
+}
+
 .blue{
   float: left;
 }
@@ -2210,7 +2141,7 @@ body {
 
 .contact {
     text-align: center;
-   margin-top: 15%;
+    margin-top: 15%;
 }
 
 .contact-2 h2 {
@@ -2279,27 +2210,20 @@ body {
 }
 
 .footer-2 {
-    padding-top: 150px;
-    margin-bottom: 300px;
-    padding-left: 40px;
-    margin: 0 auto;
-    width: 80%;
+    margin: 12% auto 0 auto;
+    width: 40%;
     font-size: 13px;
     font-family: "MS 明朝";
 }
 
 .footer-3 {
     float: left;
-    width: 16.6%;
+    width: 25%;
     font-family: serif;
 }
 
 .footer-3 p {
     font-weight: bold;
-}
-
-.footer-2 {
-    padding-left: 40px;
 }
 
 .footer-3 span {
@@ -2310,17 +2234,35 @@ body {
     padding-left: 120px;
 }
 
-.footer-3 p {
-    padding-bottom: 7px;
-}
-
 .footer-4 p {
     font-size: 10px;
-    padding-left: 150px;
-    padding-bottom: 40px;
+    padding-top: 5%;
+    padding-bottom:5%;
+    padding-left: 5%;
 }
 
 .good-wrapper {
     text-align: center;
 }
+
+.lesson-wrapper-4{
+  padding-left:10%;
+   margin:0 auto;
+   width:60%;
+   padding-top:10%;
 }
+
+.lesson-wrapper-4 h1{
+  font-size:80px;
+  float:left;
+  color:white;
+}
+
+.lesson-wrapper-4 h2{
+  float:left;
+  padding-top:7%;
+  font-size:25px;
+  padding-left:5%;
+  color:white;
+}
+  }

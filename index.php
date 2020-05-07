@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>昭栄電気産業</title>
     <link rel="stylesheet" href="common/common.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700">
+    <meta name="viewport" content="width=device-wide, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 <div class="top-wrapper-1">
@@ -120,7 +120,7 @@
     </div>
 </div>
 <div class="COMPANY fadein">
-    <a href="menu.php">
+    <a href="confirm.php">
       <img src="img/IMG_2820.JPG" alt="">
       <p>会社概要</p>
     </a>
@@ -141,56 +141,25 @@
                 <p>理念</p>
             </div>
             <div class="footer-3">
-                <p><span>専門分野</span></p>
-                <p>造船・海洋</p>
-                <p>建設インフラ</p>
-                <p>エレクトロニクス</p>
-                <p>ヘルスケア・ライフサイエンス</p>
-                <p>食</p>
-                <p>生活</p>
+                <p><span>会社概要</span></p>
                 <div class="clear">
-
-                </div>
-            </div>
-            <div class="footer-3">
-                <p><span>企業情報</span></p>
-                <p>トップメッセージ</p>
-                <p>戦略、中期経営計画</p>
-                <p>国内・海外ネットワーク</p>
-                <p>会社概要</p>
-                <p>沿革</p>
-                <p>大阪本社・西方ギャラリー</p>
-                <div class="clear">
-
                 </div>
             </div>
             <div class="footer-3">
                 <p><span>採用情報</span></p>
-                <p>新卒採用</p>
                 <div class="clear">
-
                 </div>
             </div>
             <div class="footer-3">
                 <p><span>お問い合わせ</span></p>
-                <p>ニュースリリース</p>
-                <p>プライバシーポリシー</p>
-                <div class="clear">
-
-                </div>
             </div>
-            <div class="footer-3">
-                <p><span>language</span></p>
-                <div class="clear">
-
-                </div>
+            <div class="clear">
             </div>
-        </div>
-        <div class="clear">
-
         </div>
         <div class="footer-4">
-            <p>© 2019 HARADA CORPORATION All rights Reserved.</p>
+          <p>© 2019 HARADA CORPORATION All rights Reserved.</p>
+        </div>
+        <div class="clear">
         </div>
     </div>
 </footer>
@@ -204,7 +173,7 @@
                 var position = $(this).offset().top;
                 var scroll = $(window).scrollTop();
                 var windowHeight = $(window).height();
-                if (scroll > position - windowHeight + 400) {
+                if (scroll > position - windowHeight + 200) {
                     $(this).addClass('active');
                 }
             });
@@ -212,7 +181,6 @@
     });
 </script>
 <script>
-
     //使いたい親クラスと対象のクラスを引数で渡す
     delayFadeIn(".recruitFadein",".item-2");
 
@@ -228,7 +196,7 @@
                     scroll = $(window). scrollTop();
                     windowHeight = $(window).height();
                     //指定した領域に入った時
-                    if (scroll > position - windowHeight + 400) {
+                    if (scroll > position - windowHeight + 2000) {
                         //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
                         //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
                         $(item).each(function (i) {

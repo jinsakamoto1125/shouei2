@@ -150,19 +150,14 @@
        scroll = $(window). scrollTop();
        windowHeight = $(window).height();
        //指定した領域に入った時
-         console.log(scroll);
-
-         console.log(position - windowHeight);
        if (scroll > position - windowHeight + 750) { //ここの数字の大きさが問題でした
          //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
          //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
          //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK
-           console.log("黒");
          $(".header-right a").css("color", "black");
          $(".header-right a").css("font-weight", "1000");
          $(".header-left h1").css("color", "black");
        } else {
-           console.log("白");
          //BUSINESSより前のスクロール量であれば白に戻すって感じです
          $(".header-right a").css("color", "white");
          $(".header-left h1").css("color", "white");

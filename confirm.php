@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165957224-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-165957224-1');
+    </script>
     <meta charset="utf-8">
     <title>会社概要</title>
     <link rel="stylesheet" href="common/common.css">
@@ -60,21 +69,14 @@
           <br  class="clear">
         </li>
         <li>
-          <p class="red">社員数</p>
+          <p class="red">資本金</p>
           <div class="blue">
-            <p>??名</p>
+            <p>??万円</p>
           </div>
           <br  class="clear">
         </li>
         <li>
-          <p class="red">社員数</p>
-          <div class="blue">
-            <p>??名</p>
-          </div>
-          <br  class="clear">
-        </li>
-        <li>
-          <p class="red">社員数</p>
+          <p class="red">事業内容</p>
           <div class="blue">
             <p>??名</p>
           </div>

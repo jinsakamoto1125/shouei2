@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165957224-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-165957224-1');
+    </script>
     <meta charset="utf-8">
-    <title>会社概要</title>
+    <title>アルバイト・パート</title>
     <link rel="stylesheet" href="common/common.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
      <meta name="viewport" content="width=device-wide, initial-scale=1, shrink-to-fit=no">
@@ -127,12 +135,12 @@
           $(window).scroll(function () {
               //新しくずらして表示するためのクラスを追加して、
               // その領域に入った時を条件にする
-              $('.fed0').each(function () {
+              $('.fed').each(function () {
                   var position = $(this).offset().top;
                   scroll = $(window). scrollTop();
                   windowHeight = $(window).height();
                   //指定した領域に入った時
-                  if (scroll > position - windowHeight + 400) {
+                  if (scroll > position - windowHeight + 750) {
                       //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
                       //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
                        //イベントを発火するタイミングはBUSINESSを表示する時と一緒なのでこの中でOK

@@ -28,6 +28,14 @@ body {
    font-family: serif;
 }
 
+.contact-3 {
+  color:black;
+}
+
+.footer-3 a{
+  color:black;
+}
+
 @charset "utf-8";
 
 @media screen and (max-width:480px) {
@@ -36,14 +44,15 @@ body {
     display:none;
   }
 
-  .pc1{
+  .pc1Wrap{
     display:none;
-    }
-    .pc2{
-      display:none;
-    }
-   .pc3{
-      display:none;
+  }
+
+ .top-wrapper {
+    width: 100%;
+    height:700px;
+    background-image: url(../img/singaito3.jpg);
+    background-size:cover;
     }
 
   .top{
@@ -51,11 +60,11 @@ body {
     height:250px;
     background-image: url(../img/sajyo.jpg);
     background-size: cover;
-  }
+ }
 
   .top2{
     width:100%;
-    height:200px;
+    height:250px;
     background-image: url(../img/img2.jpg);
     background-size: cover;
   }
@@ -251,12 +260,6 @@ body {
     font-size:10px;
   }
 
-  .top-wrapper {
-      width: 100%;
-      height:700px;
-      background-image: url(../img/singaito2.JPG);
-      background-size:cover;
-  }
 
   .header-left {
     float: left;
@@ -547,16 +550,15 @@ body {
     display:none;
   }
 
-  .pc1{
+  .pc1Wrap{
     display:none;
-    }
-    .pc2{
-      display:none;
-    }
-   .pc3{
-      display:none;
-    }
-
+  }
+  .top-wrapper {
+    width: 100%;
+    height:700px;
+    background-image: url(../img/singaito2.jpg);
+    background-size:cover;
+  }
   .top{
     width:100%;
     height:270px;
@@ -762,12 +764,6 @@ body {
     font-size:10px;
   }
 
-  .top-wrapper {
-      width: 100%;
-      height:700px;
-      background-image: url(../img/singaito2.JPG);
-      background-size:cover;
-  }
 
   .header-left {
     float: left;
@@ -1054,21 +1050,13 @@ body {
 }
 
 @media screen and (min-width:768px) and ( max-width:1023px) {
-  .spWrap{
+  .pcWrap{
       display:none;
     }
 
-  .pc2{
-    display:none;
-    }
-
-  .pc3{
-    display:none;
-    }
-
-  .pc4{
-    display:none;
-    }
+  .sp1Wrap{
+     display:none;
+  }
 
   .top{
     width:100%;
@@ -1077,9 +1065,16 @@ body {
     background-size: cover;
   }
 
+  .top-wrapper {
+    width: 100%;
+    height:800px;
+    background-image: url(../img/singaito.JPG);
+    background-size:cover;
+  }
+
   .top2{
     width:100%;
-    height:300px;
+    height:280px;
     background-image: url(../img/IMG_2819.JPG);
     background-size: cover;
   }
@@ -1252,12 +1247,6 @@ body {
     font-size:15px;
   }
 
-  .top-wrapper {
-      width: 100%;
-      height:800px;
-      background-image: url(../img/singaito.JPG);
-      background-size:cover;
-  }
 
   .header-left span {
       display: none;
@@ -1590,8 +1579,9 @@ body {
       font-family: serif;
   }
 
-  .footer-3 p {
+  .footer-3 a{
       font-weight: bold;
+      font-size:12px;
   }
 
   .footer-3 span {
@@ -1635,22 +1625,15 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-
-.spWrap{
-    display:none;
-  }
-
-.pc2{
-  display:none;
-  }
-
-.pc3{
-  display:none;
-  }
-
-.pc4{
-  display:none;
-  }
+.sp1Wrap{
+   display:none;
+ }
+ .top-wrapper {
+   width: 100%;
+   height:800px;
+   background-image: url(../img/singaito.JPG);
+   background-size:cover;
+ }
 
 .top{
   width:100%;
@@ -1840,12 +1823,6 @@ body {
   font-size:15px;
 }
 
-.top-wrapper {
-    width: 100%;
-    height:800px;
-    background-image: url(../img/singaito.JPG);
-    background-size:cover;
-}
 
 .header-left span {
     display: none;
@@ -2222,8 +2199,9 @@ body {
     font-family: serif;
 }
 
-.footer-3 p {
+.footer-3  a{
     font-weight: bold;
+    display:inline-block;
 }
 
 .footer-3 span {

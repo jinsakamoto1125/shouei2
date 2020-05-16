@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165957224-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-165957224-1');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>会社概要</title>
+    <title>中途採用</title>
     <link rel="stylesheet" href="common/common.css">
     <!--meta name="viewport" content="width=device-wide, initial-scale=1, shrink-to-fit=no"-->
  </head>

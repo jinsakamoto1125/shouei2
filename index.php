@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165957224-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165957224-1');
+    </script>
     <meta charset="utf-8">
     <title>昭栄電気産業</title>
     <link rel="stylesheet" href="common/common.css">
@@ -72,7 +81,7 @@
     </div>
    <br class="clear">
 <div class="message-wrapper">
-<div class="message-wrapper-2 pcWrap">
+<div class="message-wrapper-2 pc1Wrap">
       <h1 class="fadein">RECRUIT</h1>
         <ul class="recruitFadein">
             <li>
@@ -96,7 +105,7 @@
    <div class="clear">
    </div>
 </div>
-<div class="message-wrapper spWrap">
+<div class="message-wrapper sp1Wrap">
 <div class="message-wrapper-2">
       <h1 class="fadein">RECRUIT</h1>
         <ul class="recruitFadein">
@@ -129,7 +138,7 @@
     <div class="contact-2  fadein">
         <h2>ENTRY</h2>
         <p>昭栄電気産業に関する募集要項とエントリーフォームはこちら。</p>
-        <div class="contact-3">応募する</div>
+        <a  href="index.twig" class="contact-3">応募する</a>
         <div class="clear">
         </div>
     </div>
@@ -138,26 +147,26 @@
     <div class="footer">
         <div class="footer-2">
             <div class="footer-3">
-                <p>理念</p>
+                <a href="index.php">理念</a>
             </div>
             <div class="footer-3">
-                <p><span>会社概要</span></p>
+                <a href="confirm.php">会社概要</a>
                 <div class="clear">
                 </div>
             </div>
             <div class="footer-3">
-                <p><span>採用情報</span></p>
+                <a href="less.php">採用情報</a>
                 <div class="clear">
                 </div>
             </div>
             <div class="footer-3">
-                <p><span>お問い合わせ</span></p>
+                <a href="">お問い合わせ</a>
             </div>
             <div class="clear">
             </div>
         </div>
         <div class="footer-4">
-          <p>© 2019 HARADA CORPORATION All rights Reserved.</p>
+          <p>© 2020 SHO-EI COMPANY </p>
         </div>
         <div class="clear">
         </div>
@@ -196,7 +205,7 @@
                     scroll = $(window). scrollTop();
                     windowHeight = $(window).height();
                     //指定した領域に入った時
-                    if (scroll > position - windowHeight + 2000) {
+                    if (scroll > position - windowHeight + 700) {
                         //ずらして表示したいclassをそれぞれ指定して 200 * ループした回数のスピード（ms）で遅らせて表示
                         //1回目 200 * 1 2回目 200* 2 ...という具合にしてます
                         $(item).each(function (i) {
